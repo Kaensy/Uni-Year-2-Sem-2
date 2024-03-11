@@ -8,7 +8,6 @@ def pb4(text):
     frequency = {}
     for word in words:
         frequency[word] = frequency.get(word,0) + 1
-
     return [word for word in frequency if frequency[word] == 1]
 
 def pb4_copilot(text):
