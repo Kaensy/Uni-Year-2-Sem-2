@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formular de Adoptare Animal de Companie</title>
+</head>
+
+<body>
+<fieldset >
+  <h1>Formular de Adoptare Animal de Companie</h1>
+  <h3>Data Aplicării: <label for="dataAplicare"></label><input type="datetime-local" id="dataAplicare"></h3>
+  <form>
+  <table >
+    <tr>
+      <td>
+        <fieldset>
+          <div>
+            <table>
+              <caption><b>Date Personale</b></caption>
+              <tr>
+                <th><label for="nume">Nume:</label></th>
+                <th><input type="text" id="nume" name="nume" placeholder="John"></th>
+                <th><label for="prenume">Prenume:</label></th>
+                <th><input type="text" id="prenume" name="prenume" placeholder="Doe"> </th>
+                <td colspan="2">
+                  <label>Sex:</label>
+                  <label for="masculin"><input type="radio" id="masculin" name="sex" value="M" checked>Masculin</label>
+                  <label for="feminin"><input type="radio" id="feminin" name="sex" value="F">Feminin</label>
+                  <label for="altceva"><input type="radio" id="altceva" name="sex" value="altceva" disabled>Altceva</label>
+                </td>
+              </tr>
+              <tr>
+                <th rowspan="2"><label for="adresa">Adresa:</label></th>
+                <th><input type="text" id="adresa" name="adresa" placeholder="Strada..."></th>
+                <th><label for="judet">Judet:</label></th>
+                <th>
+                  <select id="judet" name="judet">
+                    <option value="Alba">Alba</option>
+                    <option value="Arad">Arad</option>
+                    <option value="Argeș">Argeș</option>
+                    <option value="Bacău">Bacău</option>
+                    <option value="Bihor">Bihor</option>
+                    <option value="Bistrița-Năsăud">Bistrița-Năsăud</option>
+                    <option value="Botoșani">Botoșani</option>
+                    <option value="Brăila">Brăila</option>
+                    <option value="Brașov">Brașov</option>
+                    <option value="București">București</option>
+                    <option value="Buzău">Buzău</option>
+                    <option value="Călărași">Călărași</option>
+                    <option value="Caraș-Severin">Caraș-Severin</option>
+                    <option value="Cluj" selected>Cluj</option>
+                    <option value="Constanța">Constanța</option>
+                    <option value="Covasna">Covasna</option>
+                    <option value="Dâmbovița">Dâmbovița</option>
+                    <option value="Dolj">Dolj</option>
+                    <option value="Galați">Galați</option>
+                    <option value="Giurgiu">Giurgiu</option>
+                    <option value="Gorj">Gorj</option>
+                    <option value="Harghita">Harghita</option>
+                    <option value="Hunedoara">Hunedoara</option>
+                    <option value="Ialomița">Ialomița</option>
+                    <option value="Iași">Iași</option>
+                    <option value="Ilfov">Ilfov</option>
+                    <option value="Maramureș">Maramureș</option>
+                    <option value="Mehedinți">Mehedinți</option>
+                    <option value="Mureș">Mureș</option>
+                    <option value="Neamț">Neamț</option>
+                    <option value="Olt">Olt</option>
+                    <option value="Prahova">Prahova</option>
+                  </select>
+                  <td colspan="2">
+                    <label for="codPostal">Cod Poștal:</label>
+                    <input type="text" id="codPostal" name="codPostal">
+                  </td>
+              </tr>
+              <tr>
+                <th><label for="blocNumar"></label><input type="text" id="blocNumar" name="blocNumar" placeholder="Numar, Apartament..."></th>
+                <th><label for="oras">Oraș:</label></th>
+                <th><input type="text" id="oras" name="oras" value="Floresti" readonly></th>
+                <th colspan="2"></th>
+              </tr>
+              <tr>
+                <th><label for="email">Email:</label></th>
+                <th><input type="text" id="email" name="email" placeholder="somebody@gmail.com"></th>
+                <th><label for="telefon">Telefon:</label></th>
+                <th><input type="tel" id="telefon" name="telefon" placeholder="07xx-xxx-xxx" maxlength="10"></th>
+                <th><label for="dataNasterii">Data Nașterii: </label></th>
+                <td><input type="date" id="dataNasterii" name="dataNasterii"></td>
+              </tr>
+            </table>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div>
+            <table>
+              <!--                Experienta Anterioara-->
+              <caption><b>Experiență Anterioară</b></caption>
+              <tr>
+                <td>
+                  <table>
+                    <tr>
+                      <th></th>
+                      <th>0</th>
+                      <th>1-3</th>
+                      <th>4+</th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td>Pisici</td>
+                      <td><label for="cat0"></label><input type="radio" id="cat0" name="cat" value="0"></td>
+                      <td><label for="cat1-3"></label><input type="radio" id="cat1-3" name="cat" value="1-3"></td>
+                      <td><label for="cat4+"></label><input type="radio" id="cat4+" name="cat" value="4+"></td>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td>Câini</td>
+                      <td><label for="dog0"></label><input type="radio" id="dog0" name="dog" value="0"></td>
+                      <td><label for="dog1-3"></label><input type="radio" id="dog1-3" name="dog" value="1-3"></td>
+                      <td><label for="dog4+"></label><input type="radio" id="dog4+" name="dog" value="4+"></td>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td>Iepuri</td>
+                      <td><label for="iepure0"></label><input type="radio" id="iepure0" name="iepure" value="0"></td>
+                      <td><label for="iepure1-3"></label><input type="radio" id="iepure1-3" name="iepure" value="1-3"></td>
+                      <td><label for="iepure4+"></label><input type="radio" id="iepure4+" name="iepure" value="4+"></td>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td>Hamster</td>
+                      <td><label for="hamster0"></label><input type="radio" id="hamster0" name="hamster" value="0"></td>
+                      <td><label for="hamster1-3"></label><input type="radio" id="hamster1-3" name="hamster" value="1-3"></td>
+                      <td colspan="2"><label for="hamster4+"></label><input type="radio" id="hamster4+" name="hamster" value="4+"></td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <td><label for="altceva0"></label><input type="radio" id="altceva0" name="altceva" value="0"></td>
+                      <td><label for="altceva1-3"></label><input type="radio" id="altceva1-3" name="altceva" value="1-3"></td>
+                      <td><label for="altceva4+"></label><input type="radio" id="altceva4+" name="altceva" value="4+"></td>
+                      <td>Altceva
+                        <label>
+                          <select  name="altceva">
+                            <option value="cal">Cal</option>
+                            <option value="vaca">Bovină</option>
+                            <option value="gaina">Găină</option>
+                          </select>
+                        </label>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <label><textarea name="message" rows="10" cols="95" placeholder="Introduceți alte date suplimentare..."></textarea></label>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </fieldset>
+        <fieldset>
+          <!--                Personalitate-->
+          <div>
+            <table>
+              <caption><b>Personalitate</b><hr></caption>
+              <tr>
+                <td>
+                  <label for="favcolor">Care este culoarea animalului favorită: <input type="color" id="favcolor" name="favcolor"></label>
+                </td>
+                <th></th>
+                <td>
+                  <p><a href="https://www.quickanddirtytips.com/wp-content/uploads/2022/04/wrong-or-wrongly%20(3).jpg">Milk</a> or <a href="https://www.quickanddirtytips.com/wp-content/uploads/2022/04/wrong-or-wrongly%20(3).jpg">Cereal</a> first?</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <ol type="1" start="1">
+                    <li>Pisică.</li>
+                    <li>Câine.</li>
+                    <li>Hamster.</li>
+                    <li>Iepure.</li>
+                    <li>Capybara.</li>
+                  </ol>
+                </td>
+                <td>
+                  <ul>
+                    <li><label for="a"></label><input type="range" id="a" name="a" value="5" min="0" max="10"></li>
+                    <li><label for="b"></label><input type="range" id="b" name="b" value="5" min="0" max="10"></li>
+                    <li><label for="c"></label><input type="range" id="c" name="c" value="5" min="0" max="10"></li>
+                    <li><label for="d"></label><input type="range" id="d" name="d" value="5" min="0" max="10"></li>
+                    <li><label for="e"></label><input type="range" id="e" name="e" value="10" min="0" max="10"></li>
+                  </ul>
+                </td>
+                <td>
+                  <img src="https://www.rainforest-alliance.org/wp-content/uploads/2021/06/capybara-square-1.jpg.optimal.jpg" alt="Capybara" width="400" height="160">
+                </td>
+              </tr>
+            </table>
+            <p>Selectați ce dețineți</p>
+            <table>
+              <tr>
+                <td>
+                  <input type="checkbox" id="obiect1" name="obiect1" value="obiect1">
+                  <label for="obiect1">Mașină</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="obiect2" name="obiect2" value="obiect2">
+                  <label for="obiect2">Telefon</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="obiect3" name="obiect3" value="obiect3">
+                  <label for="obiect3">Calculator</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="obiect4" name="obiect4" value="obiect4">
+                  <label for="obiect4">Laptop</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="obiect5" name="obiect5" value="obiect5">
+                  <label for="obiect5">Ventilator</label>
+                </td>
+            </table>
+            <table>
+              <tr>
+                <td>
+                  <label for="random">Număr  Favorit :</label>
+                  <input type="number" id="random" name="random" min="1782" max="39996" step="66" value="14256">
+                </td>
+                <td>
+                  <label for="randomCuvant">Cuvant Favorit</label>
+                  <input type="text" id="randomCuvant" size="30" name="randomCuvant" placeholder="Cuvântul tău favorit">
+                </td>
+              </tr>
+            </table>
+          </div>
+        </fieldset>
+        <fieldset>
+          <!--                Informatii-->
+          <legend>Informații</legend>
+          <ol type="I">
+            <li>Câine:
+              <ul>
+                <li>Hrănire adecvată: Câinii au nevoi nutriționale specifice, iar hrana de calitate este esențială pentru sănătatea și bunăstarea lor.</li>
+                <li>Exercițiu regulat: Câinii au nevoie de exercițiu zilnic pentru a fi sănătoși și fericiți. Plimbările regulate și activitățile fizice sunt esențiale.</li>
+              </ul>
+            </li>
+            <li>Pisică:
+              <ul>
+                <li>Igiena cutanată: Pisicile au nevoie de îngrijire regulată a blănii lor, inclusiv periaj și eventual băi periodice.</li>
+                <li>Sistem de toaletă curat: Asigurați-vă că cutia de nisip a pisicii este curată și că este într-un loc accesibil pentru ca animalul să o utilizeze confortabil.</li>
+              </ul>
+            </li>
+            <li>Iepure:
+              <ul>
+                <li>Hrănire echilibrată: Dieta iepurilor trebuie să includă o varietate de fânuri, legume și puțină hrană specială pentru iepuri. Alimentele prea bogate în carbohidrați pot provoca probleme de sănătate.</li>
+                <li>Spațiu adecvat: Iepurii au nevoie de spațiu suficient pentru a se mișca și a se simți confortabil. Un habitat mare și bine ventilat este esențial.</li>
+              </ul>
+            </li>
+            <li>Păsări (de exemplu, papagal):
+              <ul>
+                <li>Interacțiune socială: Păsările sunt animale sociale și au nevoie de interacțiune umană regulată pentru a fi fericiți și sănătoși.</li>
+                <li>Dieta adecvată: Asigurați-vă că păsările sunt hrănite cu hrană specializată pentru specia lor și că au acces la apă proaspătă și curată în mod constant.</li>
+              </ul>
+            </li>
+          </ol>
+        </fieldset>
+        <table>
+          <tr>
+            <td><label for="files" title="petPics">Atașați poze cu animalele voastre curente de companie: </label></td>
+            <td><input type="file" id="files" name="files" multiple></td>
+            <td></td>
+            <td><input type="reset" value="Resetează"></td>
+            <td><input type="submit" value="Trimite"></td>
+            <td colspan="1">
+              <a href="https://www.example.com" target="_blank">Apasa aici</a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  </form>
+</fieldset>
+</body>
+</html>
