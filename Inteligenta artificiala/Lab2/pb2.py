@@ -127,8 +127,8 @@ def edges(image_file):
     # Show the plot with both images
     plt.show()
 
-#visualize_image()
-#tabelar()
-#visualize_gray_images()
-#blur('LeCun.jpg')
+visualize_image()
+tabelar()
+visualize_gray_images()
+blur('LeCun.jpg')
 edges('Karpaty.jpg')

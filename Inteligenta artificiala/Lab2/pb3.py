@@ -9,6 +9,7 @@ from rowordnet import RoWordNet
 from unidecode import unidecode
 
 
+
 def visualize_sentence_count(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         text = file.read()
@@ -61,7 +62,7 @@ def synonyms_longest_word(file_path):
     words = word_tokenize(cleaned_text)
     longest_word = str(max(words, key=len))
     #"ro_core_news_sm"
-    nlp = spacy.load("C:/Users/user/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0/LocalCache/local-packages/Python39/site-packages/spacy/data/ro_core_news_sm")
+    nlp = spacy.load("ro_core_news_sm")
     doc = nlp(longest_word)
     singular_form = ""
     for token in doc:
@@ -74,12 +75,14 @@ def synonyms_longest_word(file_path):
         synonyms = [literal for literal in synset.literals]
         print(synonyms)
 
-
-#visualize_sentence_count('texts.txt')
-#visualize_word_count('texts.txt')
-#visualize_unique_word_count('texts.txt')
-#remove_diacritics('texts.txt')
+visualize_sentence_count('texts.txt')
+visualize_word_count('texts.txt')
+visualize_unique_word_count('texts.txt')
+remove_diacritics('texts.txt')
 synonyms_longest_word('texts.txt')
+
+
+
 
 
 

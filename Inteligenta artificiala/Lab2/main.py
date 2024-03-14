@@ -74,7 +74,7 @@ def valori_lipsa():
     print(df_employees.fillna("N/A"))
 
 
-# distributia salariilor acestor angajati pe categorii de salar
+
 def distributia_salariilor():
     df_employees = pd.read_csv('employees.csv')
 
