@@ -131,6 +131,16 @@ def outliners():
     plt.legend()
     plt.show()
 
+    Q1 = df_employees['Salary'].quantile(0.01)
+    Q3 = df_employees['Salary'].quantile(0.99)
+
+    col1 = df_employees[df_employees["Salary"] < Q1]
+    col2 = df_employees[df_employees["Salary"] > Q3]
+    col = pd.concat([col1, col2])
+
+    print(col)
+
+
 if __name__ == '__main__':
     number_of_employees()
     info()
