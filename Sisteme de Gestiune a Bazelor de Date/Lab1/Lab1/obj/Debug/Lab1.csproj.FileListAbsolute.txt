@@ -1,0 +1,10 @@
+D:\GitHub\Year2Sem2\Sisteme de Gestiune a Bazelor de Date\Lab1\Lab1\bin\Debug\Lab1.exe.config
+D:\GitHub\Year2Sem2\Sisteme de Gestiune a Bazelor de Date\Lab1\Lab1\bin\Debug\Lab1.exe
+D:\GitHub\Year2Sem2\Sisteme de Gestiune a Bazelor de Date\Lab1\Lab1\bin\Debug\Lab1.pdb
+D:\GitHub\Year2Sem2\Sisteme de Gestiune a Bazelor de Date\Lab1\Lab1\obj\Debug\Lab1.csproj.AssemblyReference.cache
+D:\GitHub\Year2Sem2\Sisteme de Gestiune a Bazelor de Date\Lab1\Lab1\obj\Debug\Lab1.Form1.resources
+D:\GitHub\Year2Sem2\Sisteme de Gestiune a Bazelor de Date\Lab1\Lab1\obj\Debug\Lab1.Properties.Resources.resources
+D:\GitHub\Year2Sem2\Sisteme de Gestiune a Bazelor de Date\Lab1\Lab1\obj\Debug\Lab1.csproj.GenerateResource.cache
+D:\GitHub\Year2Sem2\Sisteme de Gestiune a Bazelor de Date\Lab1\Lab1\obj\Debug\Lab1.csproj.CoreCompileInputs.cache
+D:\GitHub\Year2Sem2\Sisteme de Gestiune a Bazelor de Date\Lab1\Lab1\obj\Debug\Lab1.exe
+D:\GitHub\Year2Sem2\Sisteme de Gestiune a Bazelor de Date\Lab1\Lab1\obj\Debug\Lab1.pdb
