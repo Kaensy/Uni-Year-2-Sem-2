@@ -1,0 +1,144 @@
+19 Mar 2024 08:37:47,014 INFO  mpp.com.Repository.RepoDBTrack 26 <init> - Initializing RepoDBTrack with properties: postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 08:51:44,466 INFO  mpp.com.Repository.RepoDBTrack 26 <init> - Initializing RepoDBTrack with properties: postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 08:51:44,472 INFO  mpp.com.Repository.RepoDBUser 22 <init> - Initializing RepoDBUser with properties: postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 08:51:44,473 INFO  mpp.com.Repository.RepoDBChild 23 <init> - Initializing RepoDBChild with properties: postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 08:51:44,483 INFO  mpp.com.Repository.RepoDBTrack 93 save - Saving track: Track{name='track1', minimumAge=6, maximumAge=8, distance=100, children=null, id=null}
+19 Mar 2024 08:54:32,769 INFO  mpp.com.Repository.RepoDBTrack 26 <init> - Initializing RepoDBTrack with properties: postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 08:54:32,774 INFO  mpp.com.Repository.RepoDBUser 22 <init> - Initializing RepoDBUser with properties: postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 08:54:32,775 INFO  mpp.com.Repository.RepoDBChild 23 <init> - Initializing RepoDBChild with properties: postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 08:54:32,786 INFO  mpp.com.Repository.RepoDBTrack 93 save - Saving track: Track{name='track1', minimumAge=6, maximumAge=8, distance=100, children=null, id=null}
+19 Mar 2024 08:56:08,025 INFO  mpp.com.Repository.RepoDBTrack 26 <init> - Initializing RepoDBTrack with properties: jdbc:postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 08:56:08,028 INFO  mpp.com.Repository.RepoDBUser 22 <init> - Initializing RepoDBUser with properties: jdbc:postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 08:56:08,029 INFO  mpp.com.Repository.RepoDBChild 23 <init> - Initializing RepoDBChild with properties: jdbc:postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 08:56:08,038 INFO  mpp.com.Repository.RepoDBTrack 93 save - Saving track: Track{name='track1', minimumAge=6, maximumAge=8, distance=100, children=null, id=null}
+19 Mar 2024 08:57:06,552 INFO  mpp.com.Repository.RepoDBTrack 26 <init> - Initializing RepoDBTrack with properties: jdbc:postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 08:57:06,557 INFO  mpp.com.Repository.RepoDBUser 22 <init> - Initializing RepoDBUser with properties: jdbc:postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 08:57:06,559 INFO  mpp.com.Repository.RepoDBChild 23 <init> - Initializing RepoDBChild with properties: jdbc:postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 08:57:06,559 INFO  mpp.com.Repository.RepoDBTrack 64 findAll - Finding All Tracks
+19 Mar 2024 08:58:28,377 INFO  mpp.com.Repository.RepoDBTrack 26 <init> - Initializing RepoDBTrack with properties: jdbc:postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 08:58:28,381 INFO  mpp.com.Repository.RepoDBUser 22 <init> - Initializing RepoDBUser with properties: jdbc:postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 08:58:28,383 INFO  mpp.com.Repository.RepoDBChild 23 <init> - Initializing RepoDBChild with properties: jdbc:postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 08:58:28,395 INFO  mpp.com.Repository.RepoDBTrack 93 save - Saving track: Track{name='track1', minimumAge=6, maximumAge=8, distance=100, children=null, id=null}
+19 Mar 2024 08:59:35,620 INFO  mpp.com.Repository.RepoDBTrack 26 <init> - Initializing RepoDBTrack with properties: jdbc:postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 08:59:35,625 INFO  mpp.com.Repository.RepoDBUser 22 <init> - Initializing RepoDBUser with properties: jdbc:postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 08:59:35,627 INFO  mpp.com.Repository.RepoDBChild 23 <init> - Initializing RepoDBChild with properties: jdbc:postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 08:59:35,639 INFO  mpp.com.Repository.RepoDBTrack 93 save - Saving track: Track{name='track1', minimumAge=6, maximumAge=8, distance=100, children=null, id=null}
+19 Mar 2024 08:59:36,056 INFO  mpp.com.Repository.RepoDBChild 85 save - Saving Child: Entity{id=null}
+19 Mar 2024 09:01:01,515 INFO  mpp.com.Repository.RepoDBTrack 26 <init> - Initializing RepoDBTrack with properties: jdbc:postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 09:01:01,521 INFO  mpp.com.Repository.RepoDBUser 22 <init> - Initializing RepoDBUser with properties: jdbc:postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 09:01:01,522 INFO  mpp.com.Repository.RepoDBChild 23 <init> - Initializing RepoDBChild with properties: jdbc:postgresql://localhost:5432/probe postgres javalab
+19 Mar 2024 09:01:01,531 INFO  mpp.com.Repository.RepoDBTrack 93 save - Saving track: Track{name='track1', minimumAge=6, maximumAge=8, distance=100, children=null, id=null}
+19 Mar 2024 09:01:01,871 INFO  mpp.com.Repository.RepoDBChild 85 save - Saving Child: Entity{id=null}
+19 Mar 2024 09:01:01,912 INFO  mpp.com.Repository.RepoDBUser 40 save - Saving user: User{username='user1', password='pass1', id=null}
+19 Mar 2024 09:22:02,755 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe} 
+19 Mar 2024 09:22:02,762 INFO  mpp.com.Repository.RepoDBUser 20 <init> - Initializing RepoDBUser with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe}
+19 Mar 2024 09:22:02,764 INFO  mpp.com.Repository.RepoDBChild 17 <init> - Initializing RepoDBChild with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe} 
+19 Mar 2024 09:22:02,773 INFO  mpp.com.Repository.RepoDBTrack 85 save - Saving track: Track{name='track1', minimumAge=6, maximumAge=8, distance=100, children=null, id=null}
+19 Mar 2024 09:22:02,776 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+19 Mar 2024 09:22:02,776 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+19 Mar 2024 09:22:02,777 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+19 Mar 2024 09:22:02,777 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: null
+19 Mar 2024 09:22:02,777 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: null
+19 Mar 2024 09:22:03,020 ERROR mpp.com.Repository.JdbcUtils 41 getNewConnection - org.postgresql.util.PSQLException: Something unusual has occurred to cause the driver to fail. Please report this exception.
+19 Mar 2024 09:22:03,022 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit
+19 Mar 2024 09:24:40,003 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe} 
+19 Mar 2024 09:24:40,009 INFO  mpp.com.Repository.RepoDBUser 20 <init> - Initializing RepoDBUser with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe}
+19 Mar 2024 09:24:40,011 INFO  mpp.com.Repository.RepoDBChild 17 <init> - Initializing RepoDBChild with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe} 
+19 Mar 2024 09:24:40,022 INFO  mpp.com.Repository.RepoDBTrack 85 save - Saving track: Track{name='track1', minimumAge=6, maximumAge=8, distance=100, children=null, id=null}
+19 Mar 2024 09:24:40,024 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+19 Mar 2024 09:24:40,024 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+19 Mar 2024 09:24:40,024 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+19 Mar 2024 09:24:40,025 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: null
+19 Mar 2024 09:24:40,025 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: null
+19 Mar 2024 09:24:40,274 ERROR mpp.com.Repository.JdbcUtils 41 getNewConnection - org.postgresql.util.PSQLException: Something unusual has occurred to cause the driver to fail. Please report this exception.
+19 Mar 2024 09:24:40,275 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit
+19 Mar 2024 09:27:51,847 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe} 
+19 Mar 2024 09:27:52,231 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe}
+19 Mar 2024 09:27:52,297 INFO  mpp.com.Repository.RepoDBChild 17 <init> - Initializing RepoDBChild with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe} 
+19 Mar 2024 09:27:52,362 INFO  mpp.com.Repository.RepoDBTrack 93 save - Saving track: Track{name='track1', minimumAge=6, maximumAge=8, distance=100, children=null, id=null}
+19 Mar 2024 09:27:52,364 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+19 Mar 2024 09:27:52,365 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+19 Mar 2024 09:27:52,365 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+19 Mar 2024 09:27:52,366 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: null
+19 Mar 2024 09:27:52,366 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: null
+19 Mar 2024 09:27:52,412 ERROR mpp.com.Repository.JdbcUtils 41 getNewConnection - org.postgresql.util.PSQLException: Something unusual has occurred to cause the driver to fail. Please report this exception.
+19 Mar 2024 09:27:52,413 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit
+19 Mar 2024 09:32:32,519 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe} 
+19 Mar 2024 09:32:32,528 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe}
+19 Mar 2024 09:32:32,530 INFO  mpp.com.Repository.RepoDBChild 17 <init> - Initializing RepoDBChild with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe} 
+19 Mar 2024 09:32:32,550 INFO  mpp.com.Repository.RepoDBTrack 86 save - Saving track: Track{name='track1', minimumAge=6, maximumAge=8, distance=100, children=null, id=null}
+19 Mar 2024 09:32:32,552 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+19 Mar 2024 09:32:32,554 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+19 Mar 2024 09:32:32,555 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+19 Mar 2024 09:32:32,555 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: null
+19 Mar 2024 09:32:32,555 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: null
+19 Mar 2024 09:32:32,871 ERROR mpp.com.Repository.JdbcUtils 41 getNewConnection - org.postgresql.util.PSQLException: Something unusual has occurred to cause the driver to fail. Please report this exception.
+19 Mar 2024 09:32:32,873 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit
+19 Mar 2024 09:35:14,942 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe} 
+19 Mar 2024 09:35:14,951 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe}
+19 Mar 2024 09:35:14,953 INFO  mpp.com.Repository.RepoDBChild 17 <init> - Initializing RepoDBChild with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe} 
+19 Mar 2024 09:35:14,970 INFO  mpp.com.Repository.RepoDBTrack 88 save - Saving track: Track{name='track1', minimumAge=6, maximumAge=8, distance=100, children=null, id=null}
+19 Mar 2024 09:35:14,972 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+19 Mar 2024 09:35:14,975 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+19 Mar 2024 09:35:14,976 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+19 Mar 2024 09:35:14,976 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: null
+19 Mar 2024 09:35:14,976 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: null
+19 Mar 2024 09:35:15,373 ERROR mpp.com.Repository.JdbcUtils 41 getNewConnection - org.postgresql.util.PSQLException: Something unusual has occurred to cause the driver to fail. Please report this exception.
+19 Mar 2024 09:35:15,375 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit
+19 Mar 2024 09:37:40,436 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=postgresql://localhost:5432/probe} 
+19 Mar 2024 09:37:40,442 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=postgresql://localhost:5432/probe}
+19 Mar 2024 09:37:40,444 INFO  mpp.com.Repository.RepoDBChild 17 <init> - Initializing RepoDBChild with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=postgresql://localhost:5432/probe} 
+19 Mar 2024 09:37:40,456 INFO  mpp.com.Repository.RepoDBTrack 88 save - Saving track: Track{name='track1', minimumAge=6, maximumAge=8, distance=100, children=null, id=null}
+19 Mar 2024 09:37:40,459 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+19 Mar 2024 09:37:40,461 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+19 Mar 2024 09:37:40,461 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... postgresql://localhost:5432/probe
+19 Mar 2024 09:37:40,461 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: null
+19 Mar 2024 09:37:40,462 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: null
+19 Mar 2024 09:37:40,475 ERROR mpp.com.Repository.JdbcUtils 41 getNewConnection - java.sql.SQLException: No suitable driver found for postgresql://localhost:5432/probe
+19 Mar 2024 09:37:40,477 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit
+19 Mar 2024 09:44:45,753 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe} 
+19 Mar 2024 09:44:45,759 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe}
+19 Mar 2024 09:44:45,760 INFO  mpp.com.Repository.RepoDBChild 17 <init> - Initializing RepoDBChild with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe} 
+19 Mar 2024 09:44:45,771 INFO  mpp.com.Repository.RepoDBTrack 88 save - Saving track: Track{name='track1', minimumAge=6, maximumAge=8, distance=100, children=null, id=null}
+19 Mar 2024 09:44:45,773 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+19 Mar 2024 09:44:45,773 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+19 Mar 2024 09:44:45,774 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+19 Mar 2024 09:44:45,774 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: null
+19 Mar 2024 09:44:45,775 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: null
+19 Mar 2024 09:44:46,011 ERROR mpp.com.Repository.JdbcUtils 41 getNewConnection - org.postgresql.util.PSQLException: Something unusual has occurred to cause the driver to fail. Please report this exception.
+19 Mar 2024 09:44:46,012 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit
+19 Mar 2024 09:49:39,454 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe} 
+19 Mar 2024 09:49:39,461 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe}
+19 Mar 2024 09:49:39,462 INFO  mpp.com.Repository.RepoDBChild 17 <init> - Initializing RepoDBChild with properties: {jdbc.password=javalab, jdbc.username=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe} 
+19 Mar 2024 09:49:41,816 INFO  mpp.com.Repository.RepoDBTrack 88 save - Saving track: Track{name='track1', minimumAge=6, maximumAge=8, distance=100, children=null, id=null}
+19 Mar 2024 09:49:46,521 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+19 Mar 2024 09:49:46,522 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+19 Mar 2024 09:49:46,523 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+19 Mar 2024 09:49:46,524 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: null
+19 Mar 2024 09:49:46,525 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: null
+19 Mar 2024 09:49:47,107 ERROR mpp.com.Repository.JdbcUtils 41 getNewConnection - org.postgresql.util.PSQLException: Something unusual has occurred to cause the driver to fail. Please report this exception.
+19 Mar 2024 09:49:47,111 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit
+19 Mar 2024 10:45:42,636 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+19 Mar 2024 10:45:42,651 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+19 Mar 2024 10:45:42,651 INFO  mpp.com.Repository.RepoDBChild 17 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+19 Mar 2024 10:45:42,660 INFO  mpp.com.Repository.RepoDBTrack 88 save - Saving track: Track{name='track1', minimumAge=6, maximumAge=8, distance=100, children=null, id=null}
+19 Mar 2024 10:45:42,662 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+19 Mar 2024 10:45:42,662 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+19 Mar 2024 10:45:42,662 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+19 Mar 2024 10:45:42,662 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+19 Mar 2024 10:45:42,662 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+19 Mar 2024 10:45:43,015 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@63dd899)
+19 Mar 2024 10:45:43,055 INFO  mpp.com.Repository.RepoDBChild 78 save - Saving Child: Entity{id=null}
+19 Mar 2024 10:45:43,055 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+19 Mar 2024 10:45:43,056 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+19 Mar 2024 10:45:43,056 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+19 Mar 2024 10:45:43,056 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+19 Mar 2024 10:45:43,056 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+19 Mar 2024 10:45:43,109 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@362045c0)
+19 Mar 2024 10:45:43,114 INFO  mpp.com.Repository.RepoDBUser 34 save - Saving user: User{username='user1', password='pass1', id=null}
+19 Mar 2024 10:45:43,115 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+19 Mar 2024 10:45:43,115 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+19 Mar 2024 10:45:43,115 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+19 Mar 2024 10:45:43,115 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+19 Mar 2024 10:45:43,116 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+19 Mar 2024 10:45:43,153 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@59252cb6)
