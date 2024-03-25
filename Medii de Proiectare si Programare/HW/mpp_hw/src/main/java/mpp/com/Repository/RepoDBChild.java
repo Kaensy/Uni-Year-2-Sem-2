@@ -1,5 +1,6 @@
 package mpp.com.Repository;
 import mpp.com.Domain.Child;
+import mpp.com.Domain.ChildTrackDTO;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -102,5 +103,10 @@ public class RepoDBChild implements RepositoryChild
     @Override
     public Optional<Child> update(Child entity) {
         return Optional.empty();
+    }
+
+    @Override
+    public Iterable<ChildTrackDTO> getChildrenByTracks(long idTrack){
+        return null;
     }
 }

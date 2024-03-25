@@ -1,0 +1,227 @@
+2024-03-25 19:21:24,273 DEBUG MPP_CSharp.Repository.RepoChild 17 .ctor - Creating RepoChild
+2024-03-25 19:21:24,568 INFO  MPP_CSharp.Repository.RepoChild 78 Save - Saving Child: MPP_CSharp.Domain.Child
+2024-03-25 19:23:02,230 DEBUG MPP_CSharp.Repository.RepoChild 17 .ctor - Creating RepoChild
+2024-03-25 19:23:02,443 INFO  MPP_CSharp.Repository.RepoChild 78 Save - Saving Child: MPP_CSharp.Domain.Child
+2024-03-25 19:23:02,518 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 19:23:02,519 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-03-25 19:23:02,520 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-03-25 19:23:02,924 ERROR MPP_CSharp.Repository.DBUtil 51 GetNewConnection - System.IO.FileLoadException: Could not load file or assembly 'System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+   at Npgsql.NpgsqlConnectionStringBuilder.PostProcessAndValidate()
+   at Npgsql.NpgsqlConnection.SetupDataSource()
+   at Npgsql.NpgsqlConnection.set_ConnectionString(String value)
+   at Npgsql.NpgsqlConnection..ctor(String connectionString)
+   at MPP_CSharp.Repository.DBUtil.GetNewConnection() in D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\Repository\DBUtil.cs:line 46
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2024-03-25 19:23:02,930 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-03-25 19:23:02,931 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 19:24:11,460 DEBUG MPP_CSharp.Repository.RepoChild 17 .ctor - Creating RepoChild
+2024-03-25 19:24:11,577 INFO  MPP_CSharp.Repository.RepoChild 78 Save - Saving Child: MPP_CSharp.Domain.Child
+2024-03-25 19:24:11,612 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 19:24:11,613 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-03-25 19:24:11,614 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-03-25 19:24:11,761 ERROR MPP_CSharp.Repository.DBUtil 51 GetNewConnection - System.IO.FileLoadException: Could not load file or assembly 'System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+   at Npgsql.NpgsqlConnectionStringBuilder.PostProcessAndValidate()
+   at Npgsql.NpgsqlConnection.SetupDataSource()
+   at Npgsql.NpgsqlConnection.set_ConnectionString(String value)
+   at Npgsql.NpgsqlConnection..ctor(String connectionString)
+   at MPP_CSharp.Repository.DBUtil.GetNewConnection() in D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\Repository\DBUtil.cs:line 46
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2024-03-25 19:24:11,764 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-03-25 19:24:11,764 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 19:27:18,055 DEBUG MPP_CSharp.Repository.RepoChild 17 .ctor - Creating RepoChild
+2024-03-25 19:27:18,214 INFO  MPP_CSharp.Repository.RepoChild 78 Save - Saving Child: MPP_CSharp.Domain.Child
+2024-03-25 19:27:18,246 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 19:28:43,120 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-03-25 19:28:48,963 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-03-25 19:32:09,176 DEBUG MPP_CSharp.Repository.RepoChild 17 .ctor - Creating RepoChild
+2024-03-25 19:32:09,303 INFO  MPP_CSharp.Repository.RepoChild 78 Save - Saving Child: MPP_CSharp.Domain.Child
+2024-03-25 19:32:09,353 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 19:32:09,353 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-03-25 19:32:09,354 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-03-25 19:32:10,460 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-03-25 19:32:10,461 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 19:33:07,265 DEBUG MPP_CSharp.Repository.RepoChild 17 .ctor - Creating RepoChild
+2024-03-25 19:33:07,382 INFO  MPP_CSharp.Repository.RepoChild 78 Save - Saving Child: MPP_CSharp.Domain.Child
+2024-03-25 19:33:07,412 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 19:33:07,413 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-03-25 19:33:07,414 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-03-25 19:33:08,014 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-03-25 19:33:08,014 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 19:33:08,220 DEBUG MPP_CSharp.Repository.RepoChild 100 Save - Child saved:MPP_CSharp.Domain.Child
+2024-03-25 19:33:08,221 INFO  MPP_CSharp.Repository.RepoChild 22 Search - Finding Child with ID: 1
+2024-03-25 19:33:08,221 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 19:33:08,221 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 19:35:36,532 DEBUG MPP_CSharp.Repository.RepoChild 17 .ctor - Creating RepoChild
+2024-03-25 19:35:36,656 INFO  MPP_CSharp.Repository.RepoChild 78 Save - Saving Child: MPP_CSharp.Domain.Child
+2024-03-25 19:35:36,686 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 19:35:36,687 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-03-25 19:35:36,687 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-03-25 19:35:37,198 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-03-25 19:35:37,198 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 19:35:37,329 DEBUG MPP_CSharp.Repository.RepoChild 100 Save - Child saved:MPP_CSharp.Domain.Child
+2024-03-25 19:35:37,330 INFO  MPP_CSharp.Repository.RepoChild 22 Search - Finding Child with ID: 5
+2024-03-25 19:35:37,330 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 19:35:37,330 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 19:37:18,670 DEBUG MPP_CSharp.Repository.RepoChild 17 .ctor - Creating RepoChild
+2024-03-25 19:37:18,790 INFO  MPP_CSharp.Repository.RepoChild 78 Save - Saving Child: MPP_CSharp.Domain.Child
+2024-03-25 19:37:18,819 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 19:37:18,820 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-03-25 19:37:18,820 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-03-25 19:37:19,346 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-03-25 19:37:19,347 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 19:37:19,463 DEBUG MPP_CSharp.Repository.RepoChild 100 Save - Child saved:MPP_CSharp.Domain.Child
+2024-03-25 19:37:19,464 INFO  MPP_CSharp.Repository.RepoChild 22 Search - Finding Child with ID: 6
+2024-03-25 19:37:19,464 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 19:37:19,464 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 19:37:19,494 DEBUG MPP_CSharp.Repository.RepoChild 36 Search - Child found:MPP_CSharp.Domain.Child
+2024-03-25 19:39:05,193 DEBUG MPP_CSharp.Repository.RepoChild 17 .ctor - Creating RepoChild
+2024-03-25 19:39:05,280 INFO  MPP_CSharp.Repository.RepoChild 78 Save - Saving Child: MPP_CSharp.Domain.Child
+2024-03-25 19:39:05,304 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 19:39:05,305 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-03-25 19:39:05,305 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-03-25 19:39:05,751 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-03-25 19:39:05,752 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 19:39:05,856 DEBUG MPP_CSharp.Repository.RepoChild 100 Save - Child saved:MPP_CSharp.Domain.Child
+2024-03-25 19:39:05,857 INFO  MPP_CSharp.Repository.RepoChild 22 Search - Finding Child with ID: 7
+2024-03-25 19:39:05,857 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 19:39:05,857 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 19:39:05,884 DEBUG MPP_CSharp.Repository.RepoChild 36 Search - Child found:MPP_CSharp.Domain.Child
+2024-03-25 19:39:05,892 INFO  MPP_CSharp.Repository.RepoChild 49 GetAll - Finding all children
+2024-03-25 19:39:05,892 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 19:39:05,892 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 19:39:46,890 DEBUG MPP_CSharp.Repository.RepoChild 17 .ctor - Creating RepoChild
+2024-03-25 19:39:46,985 INFO  MPP_CSharp.Repository.RepoChild 78 Save - Saving Child: MPP_CSharp.Domain.Child
+2024-03-25 19:39:47,010 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 19:39:47,010 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-03-25 19:39:47,011 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-03-25 19:39:47,469 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-03-25 19:39:47,470 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 19:39:47,578 DEBUG MPP_CSharp.Repository.RepoChild 100 Save - Child saved:MPP_CSharp.Domain.Child
+2024-03-25 19:39:47,579 INFO  MPP_CSharp.Repository.RepoChild 22 Search - Finding Child with ID: 8
+2024-03-25 19:39:47,581 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 19:39:47,582 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 19:39:47,611 DEBUG MPP_CSharp.Repository.RepoChild 36 Search - Child found:MPP_CSharp.Domain.Child
+2024-03-25 19:39:47,619 INFO  MPP_CSharp.Repository.RepoChild 49 GetAll - Finding all children
+2024-03-25 19:39:47,620 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 19:39:47,620 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 19:39:47,621 DEBUG MPP_CSharp.Repository.RepoChild 72 GetAll - Children found: 1
+2024-03-25 19:39:47,623 DEBUG MPP_CSharp.Repository.DBUtil 78 CloseConnection - Closing connection
+2024-03-25 20:06:21,602 DEBUG MPP_CSharp.Repository.RepoChild 17 .ctor - Creating RepoChild
+2024-03-25 20:06:21,811 INFO  MPP_CSharp.Repository.RepoChild 78 Save - Saving Child: MPP_CSharp.Domain.Child
+2024-03-25 20:06:21,853 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 20:06:21,853 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-03-25 20:06:21,854 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-03-25 20:06:23,139 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-03-25 20:06:23,139 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 20:06:23,369 DEBUG MPP_CSharp.Repository.RepoChild 100 Save - Child saved:MPP_CSharp.Domain.Child
+2024-03-25 20:06:23,371 INFO  MPP_CSharp.Repository.RepoChild 22 Search - Finding Child with ID: 9
+2024-03-25 20:06:23,371 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 20:06:23,371 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 20:06:23,396 DEBUG MPP_CSharp.Repository.RepoChild 36 Search - Child found:MPP_CSharp.Domain.Child
+2024-03-25 20:06:23,402 INFO  MPP_CSharp.Repository.RepoChild 49 GetAll - Finding all children
+2024-03-25 20:06:23,403 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 20:06:23,403 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 20:06:23,405 DEBUG MPP_CSharp.Repository.RepoChild 72 GetAll - Children found: 1
+2024-03-25 20:06:23,406 DEBUG MPP_CSharp.Repository.DBUtil 78 CloseConnection - Closing connection
+2024-03-25 20:09:12,333 DEBUG MPP_CSharp.Repository.RepoTrack 16 .ctor - Creating RepoTrack
+2024-03-25 20:09:12,433 INFO  MPP_CSharp.Repository.RepoTrack 83 Save - Saving Track: MPP_CSharp.Domain.Track
+2024-03-25 20:09:12,460 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 20:09:12,460 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-03-25 20:09:12,461 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-03-25 20:09:12,908 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-03-25 20:09:12,909 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 20:09:13,012 DEBUG MPP_CSharp.Repository.RepoTrack 102 Save - Track saved
+2024-03-25 20:09:13,014 INFO  MPP_CSharp.Repository.RepoTrack 21 Search - Finding Track with ID: 7
+2024-03-25 20:09:13,014 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 20:09:13,014 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 20:10:12,888 DEBUG MPP_CSharp.Repository.RepoTrack 16 .ctor - Creating RepoTrack
+2024-03-25 20:10:12,973 INFO  MPP_CSharp.Repository.RepoTrack 83 Save - Saving Track: MPP_CSharp.Domain.Track
+2024-03-25 20:10:12,998 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 20:10:12,998 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-03-25 20:10:12,998 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-03-25 20:10:13,423 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-03-25 20:10:13,424 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 20:10:13,525 DEBUG MPP_CSharp.Repository.RepoTrack 102 Save - Track saved
+2024-03-25 20:10:13,526 INFO  MPP_CSharp.Repository.RepoTrack 21 Search - Finding Track with ID: 13
+2024-03-25 20:10:13,527 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 20:10:13,527 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 20:11:04,736 DEBUG MPP_CSharp.Repository.RepoTrack 16 .ctor - Creating RepoTrack
+2024-03-25 20:11:04,844 INFO  MPP_CSharp.Repository.RepoTrack 83 Save - Saving Track: MPP_CSharp.Domain.Track
+2024-03-25 20:11:04,874 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 20:11:04,874 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-03-25 20:11:04,874 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-03-25 20:11:05,310 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-03-25 20:11:05,310 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 20:11:05,419 DEBUG MPP_CSharp.Repository.RepoTrack 102 Save - Track saved
+2024-03-25 20:11:05,421 INFO  MPP_CSharp.Repository.RepoTrack 21 Search - Finding Track with ID: 14
+2024-03-25 20:11:05,422 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 20:11:05,422 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 20:11:05,450 DEBUG MPP_CSharp.Repository.RepoTrack 38 Search - Track found:MPP_CSharp.Domain.Track
+2024-03-25 20:11:05,457 INFO  MPP_CSharp.Repository.RepoTrack 53 GetAll - Finding all tracks
+2024-03-25 20:11:05,458 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 20:11:05,458 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 20:12:00,824 DEBUG MPP_CSharp.Repository.RepoTrack 16 .ctor - Creating RepoTrack
+2024-03-25 20:12:00,921 INFO  MPP_CSharp.Repository.RepoTrack 83 Save - Saving Track: MPP_CSharp.Domain.Track
+2024-03-25 20:12:00,945 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 20:12:00,945 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-03-25 20:12:00,946 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-03-25 20:12:01,371 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-03-25 20:12:01,372 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 20:12:01,469 DEBUG MPP_CSharp.Repository.RepoTrack 102 Save - Track saved
+2024-03-25 20:12:01,470 INFO  MPP_CSharp.Repository.RepoTrack 21 Search - Finding Track with ID: 15
+2024-03-25 20:12:01,471 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 20:12:01,471 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 20:12:01,495 DEBUG MPP_CSharp.Repository.RepoTrack 38 Search - Track found:MPP_CSharp.Domain.Track
+2024-03-25 20:12:01,501 INFO  MPP_CSharp.Repository.RepoTrack 53 GetAll - Finding all tracks
+2024-03-25 20:12:01,502 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 20:12:01,502 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 20:12:01,504 DEBUG MPP_CSharp.Repository.RepoTrack 77 GetAll - Tracks found: 7
+2024-03-25 20:12:42,339 DEBUG MPP_CSharp.Repository.RepoTrack 16 .ctor - Creating RepoTrack
+2024-03-25 20:12:42,426 INFO  MPP_CSharp.Repository.RepoTrack 83 Save - Saving Track: MPP_CSharp.Domain.Track
+2024-03-25 20:12:42,449 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 20:12:42,450 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-03-25 20:12:42,450 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-03-25 20:12:42,911 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-03-25 20:12:42,911 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 20:12:43,010 DEBUG MPP_CSharp.Repository.RepoTrack 102 Save - Track saved
+2024-03-25 20:12:43,012 INFO  MPP_CSharp.Repository.RepoTrack 21 Search - Finding Track with ID: 15
+2024-03-25 20:12:43,012 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 20:12:43,012 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 20:13:07,414 DEBUG MPP_CSharp.Repository.RepoTrack 16 .ctor - Creating RepoTrack
+2024-03-25 20:13:07,499 INFO  MPP_CSharp.Repository.RepoTrack 83 Save - Saving Track: MPP_CSharp.Domain.Track
+2024-03-25 20:13:07,523 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 20:13:07,523 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-03-25 20:13:07,523 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-03-25 20:13:07,957 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-03-25 20:13:07,957 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 20:13:08,069 DEBUG MPP_CSharp.Repository.RepoTrack 102 Save - Track saved
+2024-03-25 20:13:08,071 INFO  MPP_CSharp.Repository.RepoTrack 21 Search - Finding Track with ID: 17
+2024-03-25 20:13:08,071 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 20:13:08,072 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 20:13:08,097 DEBUG MPP_CSharp.Repository.RepoTrack 38 Search - Track found:MPP_CSharp.Domain.Track
+2024-03-25 20:13:08,103 INFO  MPP_CSharp.Repository.RepoTrack 53 GetAll - Finding all tracks
+2024-03-25 20:13:08,104 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 20:13:08,104 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 20:13:08,106 DEBUG MPP_CSharp.Repository.RepoTrack 77 GetAll - Tracks found: 7
+2024-03-25 20:13:08,107 DEBUG MPP_CSharp.Repository.DBUtil 78 CloseConnection - Closing connection
+2024-03-25 20:13:35,939 DEBUG MPP_CSharp.Repository.RepoUser 18 .ctor - Creating RepoUser
+2024-03-25 20:13:36,028 INFO  MPP_CSharp.Repository.RepoUser 48 FindByUsernamePassword - Logging in user with username: test
+2024-03-25 20:13:36,052 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-03-25 20:13:36,052 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-03-25 20:13:36,052 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-03-25 20:13:36,474 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-03-25 20:13:36,474 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-03-25 20:13:36,584 DEBUG MPP_CSharp.Repository.RepoUser 65 FindByUsernamePassword - User found: MPP_CSharp.Domain.User
+2024-03-25 20:13:36,596 DEBUG MPP_CSharp.Repository.DBUtil 78 CloseConnection - Closing connection

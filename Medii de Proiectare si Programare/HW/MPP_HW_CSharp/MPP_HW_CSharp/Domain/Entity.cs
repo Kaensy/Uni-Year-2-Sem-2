@@ -5,11 +5,17 @@ namespace MPP_HW_CSharp.Domain
 {
     public class Entity<TId>
     {
-        public Entity(TId id)
+        public TId Id { get; set; }
+       
+        protected Entity(TId id)
         {
             Id = id;
         }
+
+        public Entity()
+        {
+        }
+
         
-        public TId Id { get; set; }
     }
 }

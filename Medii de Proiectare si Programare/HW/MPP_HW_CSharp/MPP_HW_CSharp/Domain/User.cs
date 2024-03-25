@@ -3,23 +3,21 @@ using System.Collections.Generic;
 
 namespace MPP_HW_CSharp.Domain
 {
-    public class User : Entity<string>
+    public class User : Entity<long>
     {
         public string Username { get; set; }
         public string Password { get; set; }
         
-        public User(string id, string username, string password) : base(id)
+        public User(long id, string username, string password) : base(id)
         {
             Username = username;
             Password = password;
         }
 
-        public User(string id) : base(id)
+        public User(string username, string password)
         {
-            Username = "";
-            Password = "";
+            Username = username;
+            Password = password;
         }
-        
-        
     }
 }
