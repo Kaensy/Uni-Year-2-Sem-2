@@ -1,0 +1,28 @@
+.parent {
+    width: 400px;
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+}
+
+.left{
+    width: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.right {
+    display: flex;
+    width: 200px;
+    margin: auto;
+    justify-content: center;
+}
+
+.left p {
+    text-align: center;
+}
+
+.right img {
+    max-width:180px;
+    width: 120px;
+}

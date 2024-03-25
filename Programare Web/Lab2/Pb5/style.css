@@ -1,0 +1,39 @@
+#parent{
+    display: flex;
+    width:560px;
+    border:1px solid;
+}
+
+li > div{
+    background-color: aqua;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    padding: 10px 10px 5px 10px;
+}
+li{
+    /*float: left;*/
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    align-items: flex-end;
+
+}

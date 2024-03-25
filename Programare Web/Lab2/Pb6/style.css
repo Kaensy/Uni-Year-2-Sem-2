@@ -1,0 +1,27 @@
+input {
+    font-size: 13px;
+    font-family: monospace;
+    letter-spacing: 14px;
+    background-repeat: repeat-x;
+    width: calc((21px) * var(--max) - 5px);
+    background-image: url('square.jpg');
+    height: 18px;
+    background-size: 21px;
+}
+
+label{
+    font-size: 18px;
+    font-family: monospace;
+    padding: 5px 10px 5px 5px;
+    display: flex;
+}
+
+
+div > div {
+    margin: 2px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+

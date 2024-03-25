@@ -1,0 +1,54 @@
+.alice, .bob {
+    font-size: 19px;
+    color: #000000;
+    background: #fbfbfb;
+    border: 2px solid black;
+    width: 30%;
+
+    padding: 20px;
+    border-radius: 10px;
+
+    position: relative;
+    margin: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+}
+
+.alice::before, .bob::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: -70px;
+    top: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.bob::before {
+    background: url('images.png') no-repeat 3px 0px;
+}
+
+.alice::before {
+    background: url('images.png') no-repeat -48px 0px;
+}
+
+.alice::after, .bob::after {
+    display: block; width: 0; content: "";
+    border: 15px solid transparent;
+    position: absolute;
+    left: -15px;
+    top: 20px;
+}
+
+.alice::after {
+    border-right-color: #000000;
+    border-left: 0;
+}
+
+.bob::after {
+    border-right-color: #000000;
+    border-left: 0;
+}
