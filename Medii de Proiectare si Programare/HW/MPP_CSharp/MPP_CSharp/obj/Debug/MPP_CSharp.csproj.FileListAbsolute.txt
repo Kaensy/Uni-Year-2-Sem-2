@@ -37,10 +37,9 @@ D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\b
 D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\bin\Debug\System.ValueTuple.xml
 D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\obj\Debug\MPP_CSharp.csproj.AssemblyReference.cache
-D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\obj\Debug\MPP_CSharp.csproj.SuggestedBindingRedirects.cache
 D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\obj\Debug\MPP_CSharp.Properties.Resources.resources
 D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\obj\Debug\MPP_CSharp.csproj.GenerateResource.cache
 D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\obj\Debug\MPP_CSharp.csproj.CoreCompileInputs.cache
-D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\obj\Debug\MPP_CSharp.csproj.CopyComplete
 D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\obj\Debug\MPP_CSharp.exe
 D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\obj\Debug\MPP_CSharp.pdb
+D:\GitHub\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\obj\Debug\MPP_CSharp.csproj.Up2Date

@@ -20,7 +20,7 @@ namespace MPP_CSharp.Tests.Repository
         {
             XmlConfigurator.Configure(new FileInfo("log4net.config"));
             
-            var id = 11;
+            var id = 7;
             var repoChild = new RepoChild();
             var child1 = new Child(id,"name", 10);
             Assert.AreEqual(repoChild.Save(child1),child1);
