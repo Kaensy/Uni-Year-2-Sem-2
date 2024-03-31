@@ -13,6 +13,7 @@ li > div{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 ul{
@@ -21,7 +22,6 @@ ul{
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 img{
@@ -30,7 +30,6 @@ img{
     padding: 10px 10px 5px 10px;
 }
 li{
-    /*float: left;*/
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
