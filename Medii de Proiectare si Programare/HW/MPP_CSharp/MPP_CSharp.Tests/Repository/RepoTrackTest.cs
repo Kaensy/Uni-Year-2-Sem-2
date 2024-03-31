@@ -20,7 +20,7 @@ namespace MPP_CSharp.Tests.Repository
         {
             XmlConfigurator.Configure(new FileInfo("log4net.config"));
 
-            var id = 19;
+            var id = 14;
             var repoTrack = new RepoTrack();
             var track1 = new Track(id,"name", 10,12, 100);
             Assert.AreEqual(repoTrack.Save(track1),track1);

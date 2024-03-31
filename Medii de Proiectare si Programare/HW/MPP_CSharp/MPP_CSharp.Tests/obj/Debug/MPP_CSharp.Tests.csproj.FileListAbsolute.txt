@@ -147,8 +147,7 @@ D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp.T
 D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp.Tests\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
 D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp.Tests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
 D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp.Tests\obj\Debug\MPP_CSharp.Tests.csproj.AssemblyReference.cache
-D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp.Tests\obj\Debug\MPP_CSharp.Tests.csproj.SuggestedBindingRedirects.cache
 D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp.Tests\obj\Debug\MPP_CSharp.Tests.csproj.CoreCompileInputs.cache
-D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp.Tests\obj\Debug\MPP_CSharp.Tests.csproj.CopyComplete
 D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp.Tests\obj\Debug\MPP_CSharp.Tests.dll
 D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp.Tests\obj\Debug\MPP_CSharp.Tests.pdb
+D:\GitHub\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp.Tests\obj\Debug\MPP_CSha.8FCE1F9F.Up2Date
