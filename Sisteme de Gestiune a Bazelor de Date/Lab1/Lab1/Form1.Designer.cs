@@ -57,7 +57,6 @@
             this.OrganizersDataGrid.RowTemplate.Height = 28;
             this.OrganizersDataGrid.Size = new System.Drawing.Size(431, 257);
             this.OrganizersDataGrid.TabIndex = 1;
-            this.OrganizersDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.LoadTournamentsWithCurrentOrganizerSelected);
             // 
             // button1
             // 

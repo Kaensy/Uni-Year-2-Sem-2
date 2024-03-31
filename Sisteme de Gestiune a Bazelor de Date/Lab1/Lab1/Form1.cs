@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -14,98 +15,108 @@ namespace Lab1
 {
     public partial class Form1 : Form
     {
+        private DataSet _dataSet = new DataSet();
+        
+        
         private const string connectionString = "Server=localhost;Database=Tournaments;Integrated Security=True;";
-
+        private string formTitle;
+        private string formWidth;
+        private string formHeight;
+        private string tableParentName;
+        private string tableChildName;
+        private string SelectCommandParent;
+        private string SelectCommandChild;
+        private string InsertCommandChild;
+        private string UpdateCommandChild;
+        private string DeleteCommandChild;
+        private string tableParentPK;
+        private string tableChildPK;
+        private string tableChildFK;
+        
         public Form1()
         {
             InitializeComponent();
-
+            tableParentName = ConfigurationSettings.AppSettings["tableParentName"];
+            tableChildName = ConfigurationSettings.AppSettings["tableChildName"];
+            SelectCommandParent = ConfigurationSettings.AppSettings["SelectCommandParent"];
+            SelectCommandChild = ConfigurationSettings.AppSettings["SelectCommandChild"];
+            InsertCommandChild = ConfigurationSettings.AppSettings["InsertCommandChild"];
+            UpdateCommandChild = ConfigurationSettings.AppSettings["UpdateCommandChild"];
+            DeleteCommandChild = ConfigurationSettings.AppSettings["DeleteCommandChild"];
+            tableParentPK = ConfigurationSettings.AppSettings["tableParentPK"];
+            tableChildPK = ConfigurationSettings.AppSettings["tableChildPK"];
+            tableChildFK = ConfigurationSettings.AppSettings["tableChildFK"];
+            
+            formTitle = ConfigurationSettings.AppSettings["formTitle"];
+            this.Text = formTitle;
+            formWidth = ConfigurationSettings.AppSettings["formWidth"];
+            this.Width = Convert.ToInt32(formWidth);
+            formHeight = ConfigurationSettings.AppSettings["formHeight"];
+            this.Height = Convert.ToInt32(formHeight);
+            
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM Organizers";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            try
             {
-                SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
-                DataTable dataTable = new DataTable();
-
-                try
+                using (var connection = new SqlConnection(connectionString))
                 {
-                    connection.Open();
-                    adapter.Fill(dataTable);
+                    var adapterParent = new SqlDataAdapter(SelectCommandParent, connection);
+                    var adapterChild = new SqlDataAdapter(SelectCommandChild, connection);
 
-                    OrganizersDataGrid.DataSource = dataTable;
+                    adapterParent.Fill(_dataSet, tableParentName);
+                    adapterChild.Fill(_dataSet, tableChildName);
 
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
+                    var parentBs = new BindingSource();
+                    var childBs = new BindingSource();
+
+                    parentBs.DataSource = _dataSet.Tables[tableParentName];
+
+                    OrganizersDataGrid.DataSource = parentBs;
+
+                    var parentPk = _dataSet.Tables[tableParentName].Columns[tableParentPK];
+                    var childFk = _dataSet.Tables[tableChildName].Columns[tableChildFK];
+                    var relation = new DataRelation("fk_parent_child", parentPk, childFk);
+                    _dataSet.Relations.Add(relation);
+
+                    childBs.DataSource = parentBs;
+                    childBs.DataMember = "fk_parent_child";
+                    TournamentsDataGrid.DataSource = childBs;
                 }
             }
-
-            LoadTournamentsWithCurrentOrganizerSelected();
-        }
-
-        public void LoadTournamentsWithCurrentOrganizerSelected()
-        {
-
-            string query = "SELECT TournamentID, TournamentName, StartDate, TournamentLocation, OrganizerID FROM Tournaments where OrganizerID=@org_id";
-
-            int rowIndex = OrganizersDataGrid.CurrentCell.RowIndex;
-            var idOrganizerCurent = Convert.ToInt32(OrganizersDataGrid.Rows[rowIndex].Cells["OrganizerID"].Value.ToString());
-
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            catch (Exception ex)
             {
-                SqlDataAdapter adapter = new SqlDataAdapter();
-                adapter.SelectCommand = new SqlCommand(query, connection);
-                adapter.SelectCommand.Parameters.AddWithValue("@org_id", idOrganizerCurent);
-                DataTable dataTable = new DataTable();
-
-                try
-                {
-                    connection.Open();
-                    adapter.Fill(dataTable);
-                    TournamentsDataGrid.DataSource = dataTable;
-
-                    TournamentsDataGrid.Columns["TournamentID"].ReadOnly = true;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
-                }
+                MessageBox.Show(@"Error: "+ ex.Message);
             }
         }
 
         private void DeleteButtonClick(object sender, EventArgs e)
         {
             DeleteTournament();
-
-            LoadTournamentsWithCurrentOrganizerSelected();
         }
 
         private void DeleteTournament()
         {
-            string query = "Delete from Tournaments where TournamentID = @id";
-
-            int rowIndex = TournamentsDataGrid.CurrentCell.RowIndex;
-            int idTournamentCurent = Convert.ToInt32(TournamentsDataGrid.Rows[rowIndex].Cells["TournamentID"].Value);
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            var rowIndex = TournamentsDataGrid.CurrentCell.RowIndex;
+            var idCurent = Convert.ToInt32(TournamentsDataGrid.Rows[rowIndex].Cells[tableChildPK].Value);
+            
+            using (var connection = new SqlConnection(connectionString))
             {
-                SqlCommand sqlCommand = new SqlCommand(query, connection);
-                sqlCommand.Parameters.AddWithValue("@id", idTournamentCurent);
+                var sqlCommand = new SqlCommand(DeleteCommandChild, connection);
+                sqlCommand.Parameters.AddWithValue("@id", idCurent);
 
                 try
                 {
                     connection.Open();
-                    int rowsDeleted = sqlCommand.ExecuteNonQuery();
+                    var rowsDeleted = sqlCommand.ExecuteNonQuery();
+                    
+                    RefreshDate();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error: " + ex.Message);
+                    MessageBox.Show(@"Error: " + ex.Message);
                 }
             }
         }
@@ -114,73 +125,64 @@ namespace Lab1
         private void UpdateButtonClick(object sender, EventArgs e)
         {
             UpdateTournament();
-
-            LoadTournamentsWithCurrentOrganizerSelected();
+            
         }
-
+        
         private void UpdateTournament()
         {
-            string query = "update Tournaments set TournamentName=@new_name, TournamentLocation=@new_location, OrganizerID=@new_organizer, StartDate=@new_date where TournamentID=@id";
-
-            int rowIndex = TournamentsDataGrid.CurrentCell.RowIndex;
-            int idTournament = Convert.ToInt32(TournamentsDataGrid.Rows[rowIndex].Cells["TournamentID"].Value);
-            String newName = TournamentsDataGrid.Rows[rowIndex].Cells["TournamentName"].Value.ToString();
-            String newLocation = TournamentsDataGrid.Rows[rowIndex].Cells["TournamentLocation"].Value.ToString();
-            int newOrganizerID = Convert.ToInt32(TournamentsDataGrid.Rows[rowIndex].Cells["OrganizerID"].Value);
-            DateTime newStartDate = Convert.ToDateTime(TournamentsDataGrid.Rows[rowIndex].Cells["StartDate"].Value);
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            var rowIndex = TournamentsDataGrid.CurrentCell.RowIndex;
+            var idCurent = Convert.ToInt32(TournamentsDataGrid.Rows[rowIndex].Cells[tableChildPK].Value);
+            
+            using (var connection = new SqlConnection(connectionString))
             {
-                SqlCommand sqlCommand = new SqlCommand(query, connection);
-                sqlCommand.Parameters.AddWithValue("@new_name", newName);
-                sqlCommand.Parameters.AddWithValue("@new_location", newLocation);
-                sqlCommand.Parameters.AddWithValue("@new_organizer", newOrganizerID);
-                sqlCommand.Parameters.AddWithValue("@new_date", newStartDate);
-                sqlCommand.Parameters.AddWithValue("@id", idTournament);
+                var sqlCommand = new SqlCommand(UpdateCommandChild, connection);
 
-                try
+                for (var i = 0; i < TournamentsDataGrid.Columns.Count; i++)
                 {
+                    if (TournamentsDataGrid.Columns[i].Name != tableChildPK)
+                    {
+                        sqlCommand.Parameters.AddWithValue($"@param{i}", TournamentsDataGrid.Rows[rowIndex].Cells[i].Value.ToString());
+                    }
+                }
+                
+                sqlCommand.Parameters.AddWithValue("@id", idCurent);
+
+                try {
                     connection.Open();
-                    int rowsUpdated = sqlCommand.ExecuteNonQuery();
+                    var rowsUpdated = sqlCommand.ExecuteNonQuery();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error: " + ex.Message);
+                    MessageBox.Show(@"Error: " + ex.Message);
                 }
             }
         }
 
-
-
         private void SaveTournament()
         {
-            string query = "insert into Tournaments(TournamentName, TournamentLocation, OrganizerID, StartDate) " +
-                "values (@name, @location, @organizer_ID, @start_date)";
-
-            int rowIndex = TournamentsDataGrid.CurrentCell.RowIndex;
-            String name = TournamentsDataGrid.Rows[rowIndex].Cells["TournamentName"].Value.ToString();
-            String location = TournamentsDataGrid.Rows[rowIndex].Cells["TournamentLocation"].Value.ToString();
-            int orgRowIndex = OrganizersDataGrid.CurrentCell.RowIndex;
-            int organizerID = Convert.ToInt32(OrganizersDataGrid.Rows[orgRowIndex].Cells["OrganizerID"].Value);
-            DateTime startDate = DateTime.ParseExact(TournamentsDataGrid.Rows[rowIndex].Cells["StartDate"].Value.ToString(),
-        "MM/dd/yyyy hh:mm:ss tt", CultureInfo.InvariantCulture);
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            var rowIndex = TournamentsDataGrid.CurrentCell.RowIndex;
+            using (var connection = new SqlConnection(connectionString))
             {
-                SqlCommand sqlCommand = new SqlCommand(query, connection);
-                sqlCommand.Parameters.AddWithValue("@name", name);
-                sqlCommand.Parameters.AddWithValue("@location", location);
-                sqlCommand.Parameters.AddWithValue("@organizer_ID", organizerID);
-                sqlCommand.Parameters.AddWithValue("@start_date", startDate);
+                var sqlCommand = new SqlCommand(InsertCommandChild, connection);
+                
+                for (var i = 0; i < TournamentsDataGrid.ColumnCount; i++)
+                {
+                    if (TournamentsDataGrid.Columns[i].Name != tableChildPK)
+                    {
+                        sqlCommand.Parameters.AddWithValue($"@param{i}", TournamentsDataGrid.Rows[rowIndex].Cells[i].Value.ToString());
+                    }
+                }
 
                 try
                 {
                     connection.Open();
-                    int insertedRows = sqlCommand.ExecuteNonQuery();
+                    var rowsInserted = sqlCommand.ExecuteNonQuery();
+
+                    RefreshDate();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error: " + ex.Message);
+                    MessageBox.Show(@"Error: " + ex.Message);
                 }
             }
         }
@@ -188,15 +190,18 @@ namespace Lab1
         private void SaveButtonClick(object sender, EventArgs e)
         {
             SaveTournament();
-
-            LoadTournamentsWithCurrentOrganizerSelected();
         }
 
-        private void LoadTournamentsWithCurrentOrganizerSelected(object sender, DataGridViewCellEventArgs e)
+        private void RefreshDate()
         {
-            LoadTournamentsWithCurrentOrganizerSelected();
+            _dataSet.Tables[tableChildName].Clear();
+            using (var connection = new SqlConnection(connectionString))
+            {
+                var adapter = new SqlDataAdapter(SelectCommandChild, connection);
+                adapter.Fill(_dataSet, tableChildName);
+            }
         }
-
+        
     }
 }
 

@@ -27,7 +27,8 @@ public class RepoDBChild implements RepositoryChild
             throw new IllegalArgumentException("Id must not be null");
         }
 
-        try(var connection = dbUtils.getConnection()) {
+        try {
+            var connection = dbUtils.getConnection();
             PreparedStatement statement = connection.prepareStatement("SELECT * FROM children WHERE id = ?");
             statement.setLong(1, aLong);
             ResultSet resultSet = statement.executeQuery();
@@ -53,7 +54,8 @@ public class RepoDBChild implements RepositoryChild
         Comparator<Child> comparator = Comparator.comparingLong(Child::getId);
         Set<Child> children = new TreeSet<>(comparator);
 
-        try(var connection = dbUtils.getConnection()) {
+        try {
+            var connection = dbUtils.getConnection();
             PreparedStatement statement = connection.prepareStatement("SELECT * FROM children");
             ResultSet resultSet = statement.executeQuery();
 
@@ -71,7 +73,6 @@ public class RepoDBChild implements RepositoryChild
         catch (SQLException e) {
             throw new RuntimeException(e);
         }
-
     }
 
     @Override
@@ -83,7 +84,8 @@ public class RepoDBChild implements RepositoryChild
         
         String insertSql = "insert into Children(name, age) VALUES (?, ?)";
         
-        try(var connection = dbUtils.getConnection()) {
+        try {
+            var connection = dbUtils.getConnection();
             PreparedStatement statement = connection.prepareStatement(insertSql);
             statement.setString(1, entity.getName());
             statement.setInt(2, entity.getAge());
@@ -106,7 +108,29 @@ public class RepoDBChild implements RepositoryChild
     }
 
     @Override
-    public Iterable<ChildTrackDTO> getChildrenByTracks(long idTrack){
-        return null;
+    public Iterable<ChildTrackDTO> getChildrenByTracks(Long idTrack){
+        logger.info("Finding Children that participate in Track with id: {}",  idTrack);
+        List<ChildTrackDTO> children = new ArrayList<>();
+
+        try{
+            var connection = dbUtils.getConnection();
+            PreparedStatement statement = connection.prepareStatement("SELECT c.id, c.name, c.age FROM children c JOIN childrentracks ct ON c.id = ct.id_child WHERE ct.id_track = ?");
+            statement.setLong(1, idTrack);
+            ResultSet resultSet = statement.executeQuery();
+
+            while(resultSet.next()) {
+                Long id = resultSet.getLong("id");
+                String name = resultSet.getString("name");
+                int age = resultSet.getInt("age");
+                var child = new Child(name, age);
+                child.setId(id);
+                var childTrack = new ChildTrackDTO(child, Math.toIntExact(idTrack));
+
+                children.add(childTrack);
+            }
+            return children;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
