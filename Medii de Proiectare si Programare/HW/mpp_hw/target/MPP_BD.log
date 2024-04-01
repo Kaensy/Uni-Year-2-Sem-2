@@ -166,3 +166,768 @@
 25 Mar 2024 20:18:13,321 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
 25 Mar 2024 20:18:13,322 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
 25 Mar 2024 20:18:13,432 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3bcbb589)
+01 Apr 2024 14:25:56,282 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 14:25:56,289 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 14:25:56,291 INFO  mpp.com.Repository.RepoDBChild 18 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 14:25:59,463 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 14:25:59,467 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 14:25:59,468 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 14:25:59,468 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 14:25:59,468 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 14:25:59,469 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 14:25:59,868 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4b3ca416)
+01 Apr 2024 14:26:35,908 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 14:26:35,914 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 14:26:35,916 INFO  mpp.com.Repository.RepoDBChild 18 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 14:27:06,167 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 14:27:06,169 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 14:27:06,170 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 14:27:06,170 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 14:27:06,170 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 14:27:06,171 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 14:27:06,538 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@441dc07a)
+01 Apr 2024 14:31:07,939 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 14:31:07,945 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 14:31:07,946 INFO  mpp.com.Repository.RepoDBChild 18 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 14:31:13,451 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 14:31:13,454 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 14:31:13,455 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 14:31:13,455 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 14:31:13,455 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 14:31:13,456 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 14:31:13,840 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@1a3ff2f3)
+01 Apr 2024 14:46:00,339 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 14:46:00,345 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 14:46:00,347 INFO  mpp.com.Repository.RepoDBChild 18 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 14:46:03,720 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 14:46:03,724 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 14:46:03,724 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 14:46:03,724 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 14:46:03,725 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 14:46:03,725 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 14:46:04,160 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2df73e36)
+01 Apr 2024 14:48:39,371 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 14:48:39,378 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 14:48:39,379 INFO  mpp.com.Repository.RepoDBChild 18 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 14:48:50,914 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 14:48:50,917 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 14:48:50,917 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 14:48:50,917 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 14:48:50,917 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 14:48:50,918 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 14:48:51,279 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@40632764)
+01 Apr 2024 14:50:11,821 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 14:50:11,827 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 14:50:11,829 INFO  mpp.com.Repository.RepoDBChild 18 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 14:50:14,270 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 14:50:14,272 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 14:50:14,272 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 14:50:14,273 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 14:50:14,274 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 14:50:14,274 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 14:50:14,625 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2df73e36)
+01 Apr 2024 15:15:24,307 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:15:24,314 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 15:15:24,316 INFO  mpp.com.Repository.RepoDBChild 18 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:15:27,708 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 15:15:27,710 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:15:27,711 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:15:27,711 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:15:27,711 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:15:27,712 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:15:28,065 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@1a3ff2f3)
+01 Apr 2024 15:15:28,270 INFO  mpp.com.Repository.RepoDBChild 53 findAll - Finding all children
+01 Apr 2024 15:15:28,274 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:15:28,274 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:15:28,275 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:15:28,275 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:15:28,275 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:15:28,322 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@33a4f149)
+01 Apr 2024 15:24:22,256 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:24:22,261 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 15:24:22,263 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:24:25,752 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 15:24:25,754 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:24:25,754 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:24:25,755 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:24:25,755 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:24:25,756 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:24:26,155 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@6c5f53ba)
+01 Apr 2024 15:24:26,377 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 15:24:26,381 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:24:26,381 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:24:26,382 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:24:26,382 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:24:26,382 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:24:26,574 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@786cb114)
+01 Apr 2024 15:26:02,259 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:26:02,267 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 15:26:02,268 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:26:04,717 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 15:26:04,719 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:26:04,720 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:26:04,720 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:26:04,720 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:26:04,721 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:26:05,129 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4b3ca416)
+01 Apr 2024 15:26:05,359 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 15:26:05,362 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:26:05,362 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:26:05,363 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:26:05,363 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:26:05,363 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:26:05,418 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@511573bd)
+01 Apr 2024 15:28:07,536 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:28:07,541 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 15:28:07,542 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:28:10,753 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 15:28:10,757 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:28:10,757 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:28:10,757 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:28:10,758 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:28:10,758 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:28:11,130 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5b51b040)
+01 Apr 2024 15:28:11,362 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 15:28:11,366 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:28:11,366 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:28:11,366 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:28:11,367 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:28:11,367 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:28:11,417 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4b8902c)
+01 Apr 2024 15:39:20,926 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:39:20,932 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 15:39:20,934 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:39:24,542 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 15:39:24,544 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:39:24,545 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:39:24,545 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:39:24,545 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:39:24,546 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:39:24,962 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@417f6a1b)
+01 Apr 2024 15:41:15,445 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:41:15,451 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 15:41:15,452 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:41:18,437 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 15:41:18,440 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:41:18,440 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:41:18,440 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:41:18,441 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:41:18,441 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:41:18,843 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@1a3ff2f3)
+01 Apr 2024 15:41:19,050 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 15:41:19,053 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:41:19,053 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:41:19,054 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:41:19,054 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:41:19,054 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:41:19,101 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@33a4f149)
+01 Apr 2024 15:41:19,111 INFO  mpp.com.Repository.RepoDBTrack 58 findAll - Finding All Tracks
+01 Apr 2024 15:41:19,112 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:41:19,112 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:41:19,112 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:41:19,112 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:41:19,112 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:41:19,158 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@43938e42)
+01 Apr 2024 15:41:42,190 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:41:42,195 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 15:41:42,196 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:41:44,282 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 15:41:44,285 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:41:44,285 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:41:44,285 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:41:44,286 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:41:44,287 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:41:44,640 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@22f76b88)
+01 Apr 2024 15:41:44,828 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 15:41:44,831 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:41:44,831 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:41:44,832 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:41:44,832 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:41:44,832 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:41:44,877 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@72491381)
+01 Apr 2024 15:41:44,886 INFO  mpp.com.Repository.RepoDBTrack 58 findAll - Finding All Tracks
+01 Apr 2024 15:41:44,887 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:41:44,887 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:41:44,887 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:41:44,888 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:41:44,888 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:41:44,945 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3b50b240)
+01 Apr 2024 15:43:37,430 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:43:37,436 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 15:43:37,438 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:43:48,873 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 15:43:48,875 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:43:48,875 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:43:48,875 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:43:48,876 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:43:48,876 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:43:49,225 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2df73e36)
+01 Apr 2024 15:43:49,425 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 15:43:49,428 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:43:49,429 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:43:49,429 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:43:49,429 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:43:49,429 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:43:49,479 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3b50b240)
+01 Apr 2024 15:43:49,491 INFO  mpp.com.Repository.RepoDBTrack 58 findAll - Finding All Tracks
+01 Apr 2024 15:43:49,491 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:43:49,492 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:43:49,492 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:43:49,492 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:43:49,492 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:43:49,541 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@e8e82cd)
+01 Apr 2024 15:54:45,370 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:54:45,376 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 15:54:45,378 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:54:48,229 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 15:54:48,232 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:54:48,232 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:54:48,233 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:54:48,233 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:54:48,233 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:54:48,614 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4b3ca416)
+01 Apr 2024 15:54:48,807 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 15:54:48,810 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:54:48,810 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:54:48,811 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:54:48,811 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:54:48,811 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:54:48,857 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@511573bd)
+01 Apr 2024 15:54:48,867 INFO  mpp.com.Repository.RepoDBTrack 58 findAll - Finding All Tracks
+01 Apr 2024 15:54:48,868 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:54:48,868 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:54:48,868 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:54:48,868 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:54:48,869 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:54:48,918 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3b9efb11)
+01 Apr 2024 15:54:48,922 INFO  mpp.com.Repository.RepoDBTrack 58 findAll - Finding All Tracks
+01 Apr 2024 15:54:48,922 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:54:48,923 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3b9efb11)
+01 Apr 2024 15:56:02,713 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:56:02,719 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 15:56:02,720 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 15:56:06,946 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 15:56:06,948 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:56:06,948 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:56:06,949 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:56:06,949 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:56:06,950 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:56:07,316 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@441dc07a)
+01 Apr 2024 15:56:07,513 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 15:56:07,516 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:56:07,516 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:56:07,517 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:56:07,517 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:56:07,517 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:56:07,561 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@156627ad)
+01 Apr 2024 15:56:07,570 INFO  mpp.com.Repository.RepoDBTrack 58 findAll - Finding All Tracks
+01 Apr 2024 15:56:07,571 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:56:07,571 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 15:56:07,571 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 15:56:07,572 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 15:56:07,572 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 15:56:07,647 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2096f04b)
+01 Apr 2024 15:56:07,651 INFO  mpp.com.Repository.RepoDBTrack 58 findAll - Finding All Tracks
+01 Apr 2024 15:56:07,651 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 15:56:07,652 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2096f04b)
+01 Apr 2024 16:02:21,864 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 16:02:21,865 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 16:02:21,865 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@441dc07a)
+01 Apr 2024 16:02:21,899 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 16:02:21,900 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 16:02:21,900 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@156627ad)
+01 Apr 2024 16:02:21,903 INFO  mpp.com.Repository.RepoDBTrack 58 findAll - Finding All Tracks
+01 Apr 2024 16:02:21,903 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 16:02:21,903 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2096f04b)
+01 Apr 2024 16:02:21,904 INFO  mpp.com.Repository.RepoDBTrack 58 findAll - Finding All Tracks
+01 Apr 2024 16:02:21,904 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 16:02:21,905 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2096f04b)
+01 Apr 2024 17:08:25,290 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:08:25,296 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 17:08:25,297 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:08:27,372 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 17:08:27,374 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:08:27,375 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:08:27,375 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:08:27,376 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:08:27,376 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:08:27,774 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4786eba)
+01 Apr 2024 17:08:27,980 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 17:08:27,983 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:08:27,984 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:08:27,984 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:08:27,985 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:08:27,985 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:08:28,034 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@222a8ab0)
+01 Apr 2024 17:08:28,044 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:08:28,045 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:08:28,045 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:08:28,045 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:08:28,046 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:08:28,046 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:08:28,114 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@13167ee8)
+01 Apr 2024 17:08:28,118 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:08:28,118 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:08:28,119 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@13167ee8)
+01 Apr 2024 17:08:48,487 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 1500m
+01 Apr 2024 17:08:48,487 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:08:48,488 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@13167ee8)
+01 Apr 2024 17:08:55,371 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 1500m
+01 Apr 2024 17:08:55,372 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:08:55,372 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@13167ee8)
+01 Apr 2024 17:09:06,917 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 1500m
+01 Apr 2024 17:09:06,917 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:09:06,917 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@13167ee8)
+01 Apr 2024 17:09:13,872 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 17:09:13,873 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:09:13,873 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4786eba)
+01 Apr 2024 17:09:13,903 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 17:09:13,903 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:09:13,904 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@222a8ab0)
+01 Apr 2024 17:09:13,905 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:09:13,906 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:09:13,906 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@13167ee8)
+01 Apr 2024 17:09:13,907 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:09:13,907 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:09:13,907 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@13167ee8)
+01 Apr 2024 17:09:49,624 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:09:49,629 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 17:09:49,631 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:10:12,221 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:10:12,227 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 17:10:12,229 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:10:15,694 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 17:10:15,697 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:10:15,697 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:10:15,697 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:10:15,698 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:10:15,698 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:10:16,088 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@728bf36c)
+01 Apr 2024 17:10:16,335 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 17:10:16,339 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:10:16,339 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:10:16,340 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:10:16,340 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:10:16,340 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:10:16,387 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7e3a41dd)
+01 Apr 2024 17:10:16,398 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:10:16,399 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:10:16,399 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:10:16,400 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:10:16,400 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:10:16,400 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:10:16,448 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5dcef5b5)
+01 Apr 2024 17:10:16,451 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:10:16,452 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:10:16,452 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5dcef5b5)
+01 Apr 2024 17:11:23,026 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 1500m
+01 Apr 2024 17:11:23,027 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:11:23,028 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5dcef5b5)
+01 Apr 2024 17:12:21,729 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:12:21,735 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 17:12:21,736 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:12:25,044 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 17:12:25,046 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:12:25,047 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:12:25,047 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:12:25,047 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:12:25,048 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:12:25,409 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4d5536ed)
+01 Apr 2024 17:12:25,612 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 17:12:25,614 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:12:25,615 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:12:25,615 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:12:25,616 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:12:25,616 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:12:25,664 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@671d26c6)
+01 Apr 2024 17:12:25,677 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:12:25,678 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:12:25,679 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:12:25,679 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:12:25,679 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:12:25,679 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:12:25,727 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@43854ac6)
+01 Apr 2024 17:12:25,730 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:12:25,730 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:12:25,731 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@43854ac6)
+01 Apr 2024 17:12:32,854 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 1500m
+01 Apr 2024 17:12:32,854 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:12:32,855 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@43854ac6)
+01 Apr 2024 17:12:32,857 INFO  mpp.com.Repository.RepoDBChild 115 save - Saving Child: Entity{id=null}
+01 Apr 2024 17:12:32,857 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:12:32,857 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@671d26c6)
+01 Apr 2024 17:12:56,337 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:12:56,343 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 17:12:56,345 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:13:00,499 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 17:13:00,503 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:13:00,503 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:13:00,503 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:13:00,504 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:13:00,504 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:13:00,885 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@548579ef)
+01 Apr 2024 17:13:01,133 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 17:13:01,136 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:13:01,137 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:13:01,137 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:13:01,137 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:13:01,138 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:13:01,322 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@21ab9cd1)
+01 Apr 2024 17:13:01,346 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:13:01,347 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:13:01,347 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:13:01,347 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:13:01,347 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:13:01,348 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:13:01,397 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@44b9aac3)
+01 Apr 2024 17:13:01,400 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:13:01,400 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:13:01,401 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@44b9aac3)
+01 Apr 2024 17:13:17,680 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 1500m
+01 Apr 2024 17:13:17,681 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:13:17,682 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@44b9aac3)
+01 Apr 2024 17:13:17,688 INFO  mpp.com.Repository.RepoDBChild 115 save - Saving Child: Entity{id=null}
+01 Apr 2024 17:13:17,690 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:13:17,691 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@21ab9cd1)
+01 Apr 2024 17:13:40,243 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:13:40,249 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 17:13:40,251 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:13:44,804 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 17:13:44,806 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:13:44,806 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:13:44,807 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:13:44,807 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:13:44,807 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:13:45,200 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2b1d760)
+01 Apr 2024 17:13:45,439 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 17:13:45,442 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:13:45,443 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:13:45,443 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:13:45,443 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:13:45,444 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:13:45,490 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2df44a76)
+01 Apr 2024 17:13:45,504 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:13:45,505 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:13:45,505 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:13:45,505 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:13:45,506 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:13:45,506 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:13:45,571 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5bf3d1d1)
+01 Apr 2024 17:13:45,575 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:13:45,576 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:13:45,576 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5bf3d1d1)
+01 Apr 2024 17:14:27,140 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 1500m
+01 Apr 2024 17:14:30,858 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:14:30,859 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5bf3d1d1)
+01 Apr 2024 17:16:00,176 INFO  mpp.com.Repository.RepoDBChild 115 save - Saving Child: Entity{id=null}
+01 Apr 2024 17:16:02,730 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:16:02,732 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2df44a76)
+01 Apr 2024 17:19:15,930 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:19:15,936 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 17:19:15,943 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:19:19,585 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 17:19:19,588 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:19:19,588 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:19:19,589 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:19:19,589 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:19:19,590 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:19:20,065 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@589add5)
+01 Apr 2024 17:19:20,368 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 17:19:20,371 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:19:20,372 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:19:20,372 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:19:20,372 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:19:20,373 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:19:20,424 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@61578ba9)
+01 Apr 2024 17:19:20,434 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:19:20,435 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:19:20,435 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:19:20,436 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:19:20,436 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:19:20,436 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:19:20,482 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@dd009fe)
+01 Apr 2024 17:19:20,485 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:19:20,485 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:19:20,485 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@dd009fe)
+01 Apr 2024 17:19:42,298 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 50m
+01 Apr 2024 17:19:42,299 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:19:42,301 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@dd009fe)
+01 Apr 2024 17:19:42,306 INFO  mpp.com.Repository.RepoDBChild 115 save - Saving Child: Entity{id=null}
+01 Apr 2024 17:19:42,307 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:19:42,308 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@61578ba9)
+01 Apr 2024 17:20:46,262 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 50m
+01 Apr 2024 17:20:46,266 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:20:46,266 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@dd009fe)
+01 Apr 2024 17:20:46,270 INFO  mpp.com.Repository.RepoDBChild 115 save - Saving Child: Entity{id=null}
+01 Apr 2024 17:20:46,272 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:20:46,272 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@61578ba9)
+01 Apr 2024 17:23:21,255 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:23:21,261 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 17:23:21,262 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:23:24,244 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 17:23:24,246 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:23:24,247 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:23:24,247 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:23:24,247 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:23:24,248 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:23:24,643 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4b3ca416)
+01 Apr 2024 17:23:24,847 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 17:23:24,850 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:23:24,850 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:23:24,850 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:23:24,851 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:23:24,851 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:23:24,897 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@511573bd)
+01 Apr 2024 17:23:24,908 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:23:24,909 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:23:24,909 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:23:24,909 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:23:24,909 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:23:24,910 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:23:24,981 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3b9efb11)
+01 Apr 2024 17:23:24,984 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:23:24,985 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:23:24,985 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3b9efb11)
+01 Apr 2024 17:23:34,147 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 50m
+01 Apr 2024 17:23:34,147 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:23:34,148 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3b9efb11)
+01 Apr 2024 17:23:34,150 INFO  mpp.com.Repository.RepoDBChild 115 save - Saving Child: Entity{id=null}
+01 Apr 2024 17:23:34,150 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:23:34,150 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@511573bd)
+01 Apr 2024 17:24:29,026 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:24:29,033 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 17:24:29,038 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:24:31,798 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 17:24:31,801 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:24:31,802 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:24:31,802 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:24:31,802 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:24:31,803 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:24:32,220 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7b2aab32)
+01 Apr 2024 17:24:32,475 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 17:24:32,478 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:24:32,479 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:24:32,479 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:24:32,479 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:24:32,480 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:24:32,535 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5d77d4ec)
+01 Apr 2024 17:24:32,554 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:24:32,555 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:24:32,555 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:24:32,555 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:24:32,556 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:24:32,556 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:24:32,610 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@1cee6c72)
+01 Apr 2024 17:24:32,614 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:24:32,614 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:24:32,614 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@1cee6c72)
+01 Apr 2024 17:24:39,472 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 50m
+01 Apr 2024 17:24:39,473 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:24:39,473 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@1cee6c72)
+01 Apr 2024 17:24:39,477 INFO  mpp.com.Repository.RepoDBChild 115 save - Saving Child: Entity{id=null}
+01 Apr 2024 17:24:39,478 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:24:39,478 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5d77d4ec)
+01 Apr 2024 17:29:07,390 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:29:07,396 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 17:29:07,397 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:29:11,166 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 17:29:11,169 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:29:11,170 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:29:11,170 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:29:11,171 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:29:11,172 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:29:11,523 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@441b8da7)
+01 Apr 2024 17:29:12,014 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 17:29:12,016 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:29:12,016 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:29:12,017 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:29:12,017 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:29:12,018 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:29:12,073 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@489e8110)
+01 Apr 2024 17:29:12,084 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:29:12,085 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:29:12,085 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:29:12,086 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:29:12,086 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:29:12,086 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:29:12,129 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4995165d)
+01 Apr 2024 17:29:12,132 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:29:12,132 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:29:12,132 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4995165d)
+01 Apr 2024 17:29:18,381 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 50m
+01 Apr 2024 17:29:18,382 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:29:18,382 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4995165d)
+01 Apr 2024 17:29:18,384 INFO  mpp.com.Repository.RepoDBChild 115 save - Saving Child: Entity{id=null}
+01 Apr 2024 17:29:18,384 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:29:18,384 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@489e8110)
+01 Apr 2024 17:29:18,388 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 17:29:18,388 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:29:18,388 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@489e8110)
+01 Apr 2024 17:29:25,225 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 50m
+01 Apr 2024 17:29:25,225 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:29:25,225 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4995165d)
+01 Apr 2024 17:29:25,226 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 100m
+01 Apr 2024 17:29:25,227 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:29:25,227 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4995165d)
+01 Apr 2024 17:29:25,228 INFO  mpp.com.Repository.RepoDBChild 115 save - Saving Child: Entity{id=null}
+01 Apr 2024 17:29:25,228 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:29:25,228 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@489e8110)
+01 Apr 2024 17:29:25,232 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 17:29:25,232 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:29:25,233 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@489e8110)
+01 Apr 2024 17:30:49,270 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:30:49,276 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 17:30:49,278 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:30:51,818 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 17:30:51,821 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:30:51,822 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:30:51,822 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:30:51,822 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:30:51,823 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:30:52,205 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4fcb753a)
+01 Apr 2024 17:30:52,432 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 17:30:52,435 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:30:52,435 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:30:52,436 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:30:52,436 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:30:52,436 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:30:52,486 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@6ca2264e)
+01 Apr 2024 17:30:52,497 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:30:52,498 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:30:52,498 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:30:52,498 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:30:52,498 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:30:52,499 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:30:52,562 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3080a148)
+01 Apr 2024 17:30:52,566 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:30:52,566 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:30:52,567 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3080a148)
+01 Apr 2024 17:31:03,366 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 1000m
+01 Apr 2024 17:31:03,366 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:31:03,366 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3080a148)
+01 Apr 2024 17:31:10,729 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 17:31:10,729 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:31:10,730 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4fcb753a)
+01 Apr 2024 17:31:10,762 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 17:31:10,762 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:31:10,763 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@6ca2264e)
+01 Apr 2024 17:31:10,765 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:31:10,765 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:31:10,765 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3080a148)
+01 Apr 2024 17:31:10,766 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:31:10,766 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:31:10,767 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3080a148)
+01 Apr 2024 17:31:35,413 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 1500m
+01 Apr 2024 17:31:35,413 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:31:35,414 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3080a148)
+01 Apr 2024 17:31:35,415 INFO  mpp.com.Repository.RepoDBChild 115 save - Saving Child: Entity{id=null}
+01 Apr 2024 17:31:35,415 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:31:35,416 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@6ca2264e)
+01 Apr 2024 17:31:35,420 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 17:31:35,420 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:31:35,421 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@6ca2264e)
+01 Apr 2024 17:31:39,506 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 17:31:39,507 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:31:39,507 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4fcb753a)
+01 Apr 2024 17:31:39,541 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 17:31:39,541 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:31:39,542 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@6ca2264e)
+01 Apr 2024 17:31:39,544 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:31:39,545 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:31:39,545 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3080a148)
+01 Apr 2024 17:31:39,546 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:31:39,546 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:31:39,547 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3080a148)
+01 Apr 2024 17:32:48,714 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:32:48,722 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 17:32:48,723 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:32:50,804 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 17:32:50,806 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:32:50,807 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:32:50,807 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:32:50,808 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:32:50,808 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:32:51,241 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@732fd27c)
+01 Apr 2024 17:32:51,496 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 17:32:51,499 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:32:51,500 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:32:51,500 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:32:51,500 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:32:51,501 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:32:51,551 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@731fabd0)
+01 Apr 2024 17:32:51,564 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:32:51,565 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:32:51,565 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:32:51,566 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:32:51,566 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:32:51,566 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:32:51,631 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@66720e57)
+01 Apr 2024 17:32:51,635 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:32:51,635 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:32:51,636 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@66720e57)
+01 Apr 2024 17:32:58,902 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 1000m
+01 Apr 2024 17:32:58,903 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:32:58,903 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@66720e57)
+01 Apr 2024 17:34:38,340 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:34:38,346 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 17:34:38,347 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:34:40,644 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 17:34:40,647 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:34:40,648 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:34:40,648 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:34:40,649 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:34:40,649 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:34:41,036 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4d5536ed)
+01 Apr 2024 17:34:41,255 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 17:34:41,258 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:34:41,259 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:34:41,259 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:34:41,259 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:34:41,260 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:34:41,310 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@671d26c6)
+01 Apr 2024 17:34:41,322 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:34:41,323 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:34:41,323 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:34:41,323 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:34:41,323 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:34:41,324 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:34:41,385 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@43854ac6)
+01 Apr 2024 17:34:41,389 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:34:41,390 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:34:41,390 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@43854ac6)
+01 Apr 2024 17:34:47,357 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 50m
+01 Apr 2024 17:34:47,357 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:34:47,358 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@43854ac6)
+01 Apr 2024 17:38:18,785 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 50m
+01 Apr 2024 17:38:18,785 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:38:18,786 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@43854ac6)
+01 Apr 2024 17:38:28,111 INFO  mpp.com.Repository.RepoDBTrack 20 <init> - Initializing RepoDBTrack with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:38:28,117 INFO  mpp.com.Repository.RepoDBUser 18 <init> - Initializing RepoDBUser with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab}
+01 Apr 2024 17:38:28,117 INFO  mpp.com.Repository.RepoDBChild 19 <init> - Initializing RepoDBChild with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/probe, jdbc.pass=javalab} 
+01 Apr 2024 17:38:31,513 INFO  mpp.com.Repository.RepoDBUser 64 login - Logging in user with username: lau
+01 Apr 2024 17:38:31,515 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:38:31,515 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:38:31,516 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:38:31,516 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:38:31,517 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:38:31,874 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@732fd27c)
+01 Apr 2024 17:38:32,093 INFO  mpp.com.Repository.RepoDBChild 71 findAll - Finding all children
+01 Apr 2024 17:38:32,096 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:38:32,097 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:38:32,097 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:38:32,097 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:38:32,097 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:38:32,144 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@731fabd0)
+01 Apr 2024 17:38:32,153 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:38:32,154 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:38:32,154 TRACE mpp.com.Repository.JdbcUtils 25 getNewConnection - Enter
+01 Apr 2024 17:38:32,154 INFO  mpp.com.Repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/probe
+01 Apr 2024 17:38:32,155 INFO  mpp.com.Repository.JdbcUtils 31 getNewConnection - user: postgres
+01 Apr 2024 17:38:32,155 INFO  mpp.com.Repository.JdbcUtils 32 getNewConnection - pass: javalab
+01 Apr 2024 17:38:32,205 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@66720e57)
+01 Apr 2024 17:38:32,209 INFO  mpp.com.Repository.RepoDBTrack 88 findAll - Finding All Tracks
+01 Apr 2024 17:38:32,209 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:38:32,210 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@66720e57)
+01 Apr 2024 17:38:39,805 INFO  mpp.com.Repository.RepoDBTrack 57 findTrackByName - Finding Track with name: 50m
+01 Apr 2024 17:38:39,805 TRACE mpp.com.Repository.JdbcUtils 48 getConnection - Enter
+01 Apr 2024 17:38:39,806 TRACE mpp.com.Repository.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@66720e57)

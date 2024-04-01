@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="866.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="mpp.com.Gui.MainController">
+    <children>
+        <BorderPane layoutX="1.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" styleClass="grey-color" BorderPane.alignment="CENTER">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Atletism Contest App" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Comic Sans MS" size="24.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </HBox>
+            </top>
+            <left>
+                <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="TOP_CENTER">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add Coptil" VBox.vgrow="ALWAYS">
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Comic Sans MS" size="14.0" />
+                            </font>
+                        </Text>
+                        <TextField fx:id="nameTextField" promptText="Name...">
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Comic Sans MS" size="13.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="ageTextField" promptText="Age...">
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Comic Sans MS" size="13.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="trackTextField" promptText="Track...">
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Comic Sans MS" size="13.0" />
+                            </font>
+                        </TextField>
+                        <Button fx:id="addButton" onAction="#handleAdd" mnemonicParsing="false" text="Add" VBox.vgrow="ALWAYS">
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Comic Sans MS" size="12.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </left>
+            <bottom>
+                <HBox alignment="CENTER" prefHeight="54.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="logoutButton" onAction="#handleLogout" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Exit" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Comic Sans MS" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+            </bottom>
+            <center>
+                <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <TableView fx:id="tableViewChild" layoutX="49.0" layoutY="48.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="tableColumnChildName" text="Name" />
+                            <TableColumn fx:id="tableColumnChildAge" text="Age" />
+                              <TableColumn fx:id="tableColumnChildTracks" prefWidth="70.0" text="Tracks" />
+                          </columns>
+                        </TableView>
+                     </children>
+                        </AnchorPane>
+                        <VBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minWidth="300.0" prefWidth="300.0">
+                            <children>
+                                <TableView fx:id="tableViewAgeGroups" maxWidth="-Infinity" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                    <columns>
+                                        <TableColumn fx:id="tableColumnAgeGroupsIntervals" maxWidth="1.7976931348623157E308" minWidth="200.0" prefWidth="-1.0" text="Age Interval" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="200.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <TableView fx:id="tableViewTracks" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefWidth="150.0" VBox.vgrow="ALWAYS">
+                                    <columns>
+                                        <TableColumn fx:id="tableColumnTracksName" maxWidth="150.0" minWidth="150.0" prefWidth="-1.0" text="Track" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

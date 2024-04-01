@@ -33,7 +33,7 @@
                      <children>
                         <Pane prefHeight="100.0" prefWidth="600.0">
                            <children>
-                              <Button fx:id="loginButton" layoutX="274.0" layoutY="37.0" mnemonicParsing="false" text="Log In" />
+                              <Button onAction="#handleLogin" fx:id="loginButton" layoutX="274.0" layoutY="37.0" mnemonicParsing="false" text="Log In" />
                            </children>
                         </Pane>
                      </children>

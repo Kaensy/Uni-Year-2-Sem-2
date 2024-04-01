@@ -6,10 +6,18 @@ public class Child extends Entity<Long>{
     private String name;
     private int age;
     private List<Track> tracks;
+    private int numberOfTracks;
 
     public Child(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    public Child(String name, int age, List<Track> tracks) {
+        this.name = name;
+        this.age = age;
+        this.tracks = tracks;
+        this.numberOfTracks = tracks.size();
     }
 
     public String getName() {
@@ -34,5 +42,10 @@ public class Child extends Entity<Long>{
 
     public void setTracks(List<Track> tracks) {
         this.tracks = tracks;
+        this.numberOfTracks = tracks.size();
+    }
+
+    public int getNumberOfTracks() {
+        return numberOfTracks;
     }
 }

@@ -53,6 +53,36 @@ public class RepoDBTrack implements RepositoryTrack{
             }
     }
 
+    public Optional<Track> findTrackByName(String trackName) {
+        logger.info("Finding Track with name: {}",  trackName);
+
+        if(trackName == null) {
+            throw new IllegalArgumentException("trackName must not be null");
+        }
+
+        try {
+            var connection = dbUtils.getConnection();
+            PreparedStatement statement = connection.prepareStatement("SELECT * FROM track WHERE name = ?");
+            statement.setString(1, trackName);
+            ResultSet resultSet = statement.executeQuery();
+
+            if(resultSet.next()) {
+                Long id = resultSet.getLong("id");
+                String name = resultSet.getString("name");
+                int minimumAge = resultSet.getInt("minimum_age");
+                int maximumAge = resultSet.getInt("maximum_age");
+                int distance = resultSet.getInt("distance");
+                Track track = new Track(name, minimumAge, maximumAge, distance);
+                track.setId(id);
+                return Optional.of(track);
+            }
+            return Optional.empty();
+        }
+        catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     @Override
     public Iterable<Track> findAll() {
         logger.info("Finding All Tracks");
@@ -68,8 +98,8 @@ public class RepoDBTrack implements RepositoryTrack{
 
                 Long id = resultSet.getLong("id");
                 String name = resultSet.getString("name");
-                int minimumAge = resultSet.getInt("minimumAge");
-                int maximumAge = resultSet.getInt("maximumAge");
+                int minimumAge = resultSet.getInt("minimum_age");
+                int maximumAge = resultSet.getInt("maximum_age");
                 int distance = resultSet.getInt("distance");
                 Track track = new Track(name, minimumAge, maximumAge, distance);
                 track.setId(id);

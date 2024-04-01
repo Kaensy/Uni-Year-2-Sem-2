@@ -8,4 +8,3 @@ D:\GitHub\Year2Sem2\Sisteme de Gestiune a Bazelor de Date\Lab1\Lab1\obj\Debug\La
 D:\GitHub\Year2Sem2\Sisteme de Gestiune a Bazelor de Date\Lab1\Lab1\obj\Debug\Lab1.csproj.CoreCompileInputs.cache
 D:\GitHub\Year2Sem2\Sisteme de Gestiune a Bazelor de Date\Lab1\Lab1\obj\Debug\Lab1.exe
 D:\GitHub\Year2Sem2\Sisteme de Gestiune a Bazelor de Date\Lab1\Lab1\obj\Debug\Lab1.pdb
-D:\Github\Year2Sem2\Sisteme de Gestiune a Bazelor de Date\Lab1\Lab1\obj\Debug\Lab1.csproj.SuggestedBindingRedirects.cache

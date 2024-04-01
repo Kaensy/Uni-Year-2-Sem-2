@@ -41,6 +41,9 @@ public class Track extends Entity<Long>{
         this.maximumAge = maximumAge;
     }
 
+    public String getAgeInterval() {
+        return minimumAge + "-" + maximumAge;
+    }
     public int getDistance() {
         return distance;
     }

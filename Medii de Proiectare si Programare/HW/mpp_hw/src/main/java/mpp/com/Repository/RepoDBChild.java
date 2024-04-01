@@ -1,6 +1,7 @@
 package mpp.com.Repository;
 import mpp.com.Domain.Child;
 import mpp.com.Domain.ChildTrackDTO;
+import mpp.com.Domain.Track;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -39,6 +40,23 @@ public class RepoDBChild implements RepositoryChild
                 int age = resultSet.getInt("age");
                 Child child = new Child(name, age);
                 child.setId(id);
+
+                PreparedStatement statementTracks = connection.prepareStatement("Select * from track t join childrentracks ct on t.id = ct.id_track where ct.id_child = ?");
+                statementTracks.setLong(1, aLong);
+                ResultSet resultSetTracks = statementTracks.executeQuery();
+                List<Track> tracks = new ArrayList<>();
+
+                while(resultSetTracks.next()) {
+                    Long idTrack = resultSetTracks.getLong("id");
+                    String nameTrack = resultSetTracks.getString("name");
+                    int minimumAge = resultSetTracks.getInt("minimum_age");
+                    int maximumAge = resultSetTracks.getInt("maximum_age");
+                    int distance = resultSetTracks.getInt("distance");
+                    Track track = new Track(nameTrack, minimumAge, maximumAge, distance);
+                    track.setId(idTrack);
+                    tracks.add(track);
+                }
+                child.setTracks(tracks);
                 return Optional.of(child);
             }
             return Optional.empty();
@@ -66,6 +84,23 @@ public class RepoDBChild implements RepositoryChild
                 Child child = new Child(name, age);
                 child.setId(id);
 
+                PreparedStatement statementTracks = connection.prepareStatement("Select * from track t join childrentracks ct on t.id = ct.id_track where ct.id_child = ?");
+                statementTracks.setLong(1, id);
+                ResultSet resultSetTracks = statementTracks.executeQuery();
+                List<Track> tracks = new ArrayList<>();
+
+                while(resultSetTracks.next()) {
+                    Long idTrack = resultSetTracks.getLong("id");
+                    String nameTrack = resultSetTracks.getString("name");
+                    int minimumAge = resultSetTracks.getInt("minimum_age");
+                    int maximumAge = resultSetTracks.getInt("maximum_age");
+                    int distance = resultSetTracks.getInt("distance");
+                    Track track = new Track(nameTrack, minimumAge, maximumAge, distance);
+                    track.setId(idTrack);
+                    tracks.add(track);
+                }
+                child.setTracks(tracks);
+
                 children.add(child);
             }
             return children;
@@ -86,10 +121,23 @@ public class RepoDBChild implements RepositoryChild
         
         try {
             var connection = dbUtils.getConnection();
-            PreparedStatement statement = connection.prepareStatement(insertSql);
+            PreparedStatement statement = connection.prepareStatement(insertSql, Statement.RETURN_GENERATED_KEYS);
             statement.setString(1, entity.getName());
             statement.setInt(2, entity.getAge());
             statement.executeUpdate();
+
+            ResultSet generatedKeys = statement.getGeneratedKeys();
+            if (generatedKeys.next()) {
+                entity.setId(generatedKeys.getLong(1));
+            }
+
+            PreparedStatement statementTracks = connection.prepareStatement("insert into childrentracks(id_child, id_track) VALUES (?, ?)");
+            statementTracks.setLong(1, entity.getId());
+            for(Track track : entity.getTracks()) {
+                statementTracks.setLong(2, track.getId());
+                statementTracks.executeUpdate();
+            }
+
             return Optional.empty();
         }
         catch (SQLException e) {
