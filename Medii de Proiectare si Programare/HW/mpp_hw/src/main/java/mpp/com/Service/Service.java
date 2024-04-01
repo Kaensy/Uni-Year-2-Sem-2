@@ -68,4 +68,12 @@ public class Service {
         return serviceTrack.findTrackByName(trackName);
     }
 
+    public Iterable<Track> getTracksByAge(int minimumAge, int maximumAge){
+        return serviceTrack.getTracksByAge(minimumAge, maximumAge);
+    }
+
+    public Iterable<Child> getChildrenByTrackId(Long idTrack) {
+        return serviceChild.getChildrenByTrackId(idTrack);
+    }
+
 }

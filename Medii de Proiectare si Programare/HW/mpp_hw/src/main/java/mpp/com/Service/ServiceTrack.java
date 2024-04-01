@@ -29,4 +29,8 @@ public class ServiceTrack {
     public Optional<Track> findTrackByName(String trackName) {
         return repoDBTrack.findTrackByName(trackName);
     }
+
+    public Iterable<Track> getTracksByAge(int minimumAge, int maximumAge){
+        return repoDBTrack.getTracksByAge(minimumAge, maximumAge);
+    }
 }

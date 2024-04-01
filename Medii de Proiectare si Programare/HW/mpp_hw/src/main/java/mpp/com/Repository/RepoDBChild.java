@@ -181,4 +181,46 @@ public class RepoDBChild implements RepositoryChild
             throw new RuntimeException(e);
         }
     }
+
+    public Iterable<Child> getChildrenByTrackId(Long idTrack){
+        logger.info("Finding Children that participate in Track with id: {}",  idTrack);
+        Comparator<Child> comparator = Comparator.comparingLong(Child::getId);
+        Set<Child> children = new TreeSet<>(comparator);
+
+        try{
+            var connection = dbUtils.getConnection();
+            PreparedStatement statement = connection.prepareStatement("SELECT c.id, c.name, c.age FROM children c JOIN childrentracks ct ON c.id = ct.id_child WHERE ct.id_track = ?");
+            statement.setLong(1, idTrack);
+            ResultSet resultSet = statement.executeQuery();
+
+            while(resultSet.next()) {
+                Long id = resultSet.getLong("id");
+                String name = resultSet.getString("name");
+                int age = resultSet.getInt("age");
+                var child = new Child(name, age);
+                child.setId(id);
+
+                PreparedStatement statementTracks = connection.prepareStatement("Select * from track t join childrentracks ct on t.id = ct.id_track where ct.id_child = ?");
+                statementTracks.setLong(1, id);
+                ResultSet resultSetTracks = statementTracks.executeQuery();
+                List<Track> tracks = new ArrayList<>();
+
+                while(resultSetTracks.next()) {
+                    String nameTrack = resultSetTracks.getString("name");
+                    int minimumAge = resultSetTracks.getInt("minimum_age");
+                    int maximumAge = resultSetTracks.getInt("maximum_age");
+                    int distance = resultSetTracks.getInt("distance");
+                    Track track = new Track(nameTrack, minimumAge, maximumAge, distance);
+                    track.setId(idTrack);
+                    tracks.add(track);
+                }
+                child.setTracks(tracks);
+
+                children.add(child);
+            }
+            return children;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

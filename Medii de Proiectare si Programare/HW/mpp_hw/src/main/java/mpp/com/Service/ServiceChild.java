@@ -34,4 +34,8 @@ public class ServiceChild {
     public Iterable<ChildTrackDTO> getChildrenByTracks(Long idTrack) {
         return repoDBChild.getChildrenByTracks(idTrack);
     }
+
+    public Iterable<Child> getChildrenByTrackId(Long idTrack) {
+        return repoDBChild.getChildrenByTrackId(idTrack);
+    }
 }

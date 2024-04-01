@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import mpp.com.Domain.Child;
@@ -16,6 +17,7 @@ import mpp.com.Domain.User;
 import mpp.com.Service.Service;
 
 import java.io.IOException;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -69,7 +71,11 @@ public class MainController {
         Map<String, Track> uniqueAgeIntervalTracksMap = StreamSupport.stream(tracks.spliterator(), false)
                 .collect(Collectors.toMap(Track::getAgeInterval, track -> track, (existing, replacement) -> existing));
 
-        modelTrackAgeIntervals.setAll(uniqueAgeIntervalTracksMap.values());
+        List<Track> sortedTracks = uniqueAgeIntervalTracksMap.values().stream()
+                .sorted(Comparator.comparing(track -> Integer.parseInt(track.getAgeInterval().split("-")[0])))
+                .collect(Collectors.toList());
+
+        modelTrackAgeIntervals.setAll(sortedTracks);
     }
 
     @FXML
@@ -135,5 +141,23 @@ public class MainController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public void handleTableClick(MouseEvent mouseEvent) {
+        var selectedTrack = tableViewAgeGroups.getSelectionModel().getSelectedItem();
+        if (selectedTrack == null) {
+            return;
+        }
+        initModelTrack(masterService.getTracksByAge(selectedTrack.getMinimumAge(), selectedTrack.getMaximumAge()));
+        tableViewAgeGroups.getSelectionModel().clearSelection();
+    }
+
+    public void handleTableTracksClick(MouseEvent mouseEvent) {
+        var selectedTrack = tableViewTracks.getSelectionModel().getSelectedItem();
+        if (selectedTrack == null) {
+            return;
+        }
+        initModelChild(masterService.getChildrenByTrackId(selectedTrack.getId()));
+        tableViewTracks.getSelectionModel().clearSelection();
     }
 }

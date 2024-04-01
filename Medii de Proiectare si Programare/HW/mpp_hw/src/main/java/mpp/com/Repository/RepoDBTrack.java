@@ -113,6 +113,37 @@ public class RepoDBTrack implements RepositoryTrack{
         }
     }
 
+    public Iterable<Track> getTracksByAge(int minimumAge, int maximumAge){
+        logger.info("Finding All Tracks by Age");
+        Comparator<Track> comparator = Comparator.comparingLong(Track::getId);
+        Set<Track> tracks = new TreeSet<>(comparator);
+
+        try {
+            var connection = dbUtils.getConnection();
+            PreparedStatement statement = connection.prepareStatement("SELECT * FROM track WHERE minimum_age <= ? AND maximum_age >= ?");
+            statement.setInt(1, minimumAge);
+            statement.setInt(2, maximumAge);
+            ResultSet resultSet = statement.executeQuery();
+
+            while(resultSet.next()) {
+
+                Long id = resultSet.getLong("id");
+                String name = resultSet.getString("name");
+                int minimumAgeTrack = resultSet.getInt("minimum_age");
+                int maximumAgeTrack = resultSet.getInt("maximum_age");
+                int distance = resultSet.getInt("distance");
+                Track track = new Track(name, minimumAgeTrack, maximumAgeTrack, distance);
+                track.setId(id);
+
+                tracks.add(track);
+            }
+            return tracks;
+        }
+        catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     @Override
     public Optional<Track> save(Track entity) {
         logger.info("Saving track: {}",  entity);
