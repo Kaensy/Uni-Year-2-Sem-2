@@ -99,11 +99,12 @@
                                 </TableView>
                             </children>
                         </VBox>
-                        <VBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="200.0" HBox.hgrow="ALWAYS">
+                        <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="200.0" HBox.hgrow="ALWAYS">
                             <children>
-                                <TableView fx:id="tableViewTracks" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" onMouseClicked="#handleTableTracksClick" prefWidth="150.0" VBox.vgrow="ALWAYS">
+                                <TableView fx:id="tableViewTracks" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" onMouseClicked="#handleTableTracksClick" prefWidth="200.0" VBox.vgrow="ALWAYS">
                                     <columns>
-                                        <TableColumn fx:id="tableColumnTracksName" maxWidth="150.0" minWidth="150.0" prefWidth="-1.0" text="Track" />
+                                        <TableColumn fx:id="tableColumnTracksName" minWidth="100.0" prefWidth="-1.0" text="Track" />
+                              <TableColumn fx:id="tableColumnTracksNrParticipants" minWidth="100.0" prefWidth="-1.0" text="Nr Participants" />
                                     </columns>
                                 </TableView>
                             </children>

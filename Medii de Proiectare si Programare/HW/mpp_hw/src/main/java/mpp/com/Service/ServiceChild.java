@@ -4,15 +4,16 @@ import mpp.com.Domain.Child;
 import mpp.com.Domain.ChildTrackDTO;
 import mpp.com.Domain.Track;
 import mpp.com.Repository.RepoDBChild;
+import mpp.com.Repository.RepositoryChild;
 
 import java.util.List;
 import java.util.Optional;
 
 public class ServiceChild {
 
-    RepoDBChild repoDBChild;
+    RepositoryChild repoDBChild;
 
-    public ServiceChild(RepoDBChild repoDBChild) {
+    public ServiceChild(RepositoryChild repoDBChild) {
         this.repoDBChild = repoDBChild;
     }
 

@@ -13,6 +13,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import mpp.com.Domain.Child;
 import mpp.com.Domain.Track;
+import mpp.com.Domain.TrackDTO;
 import mpp.com.Domain.User;
 import mpp.com.Service.Service;
 
@@ -37,15 +38,16 @@ public class MainController {
     public TableColumn<Child,Integer> tableColumnChildTracks;
     public TableView<Track> tableViewAgeGroups;
     public TableColumn<Track,String> tableColumnAgeGroupsIntervals;
-    public TableView<Track> tableViewTracks;
-    public TableColumn<Track,String> tableColumnTracksName;
+    public TableView<TrackDTO> tableViewTracks;
+    public TableColumn<TrackDTO,String> tableColumnTracksName;
     public Button logoutButton;
+    public TableColumn<TrackDTO,Integer> tableColumnTracksNrParticipants;
 
     private Service masterService;
     private Stage dialogStage;
     private User currentUser;
     private final ObservableList<Child> modelChild = FXCollections.observableArrayList();
-    private final ObservableList<Track> modelTrack = FXCollections.observableArrayList();
+    private final ObservableList<TrackDTO> modelTrack = FXCollections.observableArrayList();
     private final ObservableList<Track> modelTrackAgeIntervals = FXCollections.observableArrayList();
 
     public void setMasterService(Service service, Stage stage, User user) {
@@ -53,7 +55,7 @@ public class MainController {
         this.dialogStage = stage;
         this.currentUser = user;
         initModelChild(masterService.getAllChildren());
-        initModelTrack(masterService.getAllTracks());
+        initModelTrack(masterService.getTrackDTOs());
         initModelTrackAgeInterval(masterService.getAllTracks());
     }
 
@@ -62,8 +64,10 @@ public class MainController {
         modelChild.setAll(childList);
     }
 
-    private void initModelTrack(Iterable<Track> tracks) {
-        List<Track> trackList = StreamSupport.stream(tracks.spliterator(), false).toList();
+    private void initModelTrack(Iterable<TrackDTO> tracks) {
+        List<TrackDTO> trackList = StreamSupport.stream(tracks.spliterator(), false)
+                .sorted(Comparator.comparing(dto -> Integer.parseInt(dto.getTrack().getName().replace("m", ""))))
+                .collect(Collectors.toList());
         modelTrack.setAll(trackList);
     }
 
@@ -85,7 +89,8 @@ public class MainController {
         tableColumnChildTracks.setCellValueFactory(new PropertyValueFactory<>("numberOfTracks"));
         tableViewChild.setItems(modelChild);
 
-        tableColumnTracksName.setCellValueFactory(new PropertyValueFactory<>("name"));
+        tableColumnTracksName.setCellValueFactory(new PropertyValueFactory<>("trackName"));
+        tableColumnTracksNrParticipants.setCellValueFactory(new PropertyValueFactory<>("nrParticipants"));
         tableViewTracks.setItems(modelTrack);
 
         tableColumnAgeGroupsIntervals.setCellValueFactory(new PropertyValueFactory<>("ageInterval"));
@@ -95,8 +100,18 @@ public class MainController {
 
     public void handleAdd(ActionEvent actionEvent) {
         var name = nameTextField.getText();
-        var age = Integer.parseInt(ageTextField.getText());
+        var age = ageTextField.getText();
 
+        if ( name.isEmpty() || age.isEmpty()){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error Dialog");
+            alert.setHeaderText("Input Error");
+            alert.setContentText("Please enter a name and an age.");
+
+            alert.showAndWait();
+            return;
+        }
+        int age1 =  Integer.parseInt(age);
         String trackTextFieldValue = trackTextField.getText();
         String[] trackValues = trackTextFieldValue.split(",");
 
@@ -111,7 +126,7 @@ public class MainController {
         }
 
         try{
-            masterService.addChild(name, age, trackValues);
+            masterService.addChild(name, age1, trackValues);
         } catch (Exception e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error Dialog");
@@ -122,6 +137,7 @@ public class MainController {
             return;
         }
         initModelChild(masterService.getAllChildren());
+        initModelTrack(masterService.getTrackDTOs());
     }
 
     public void handleLogout(ActionEvent actionEvent) {
@@ -148,7 +164,7 @@ public class MainController {
         if (selectedTrack == null) {
             return;
         }
-        initModelTrack(masterService.getTracksByAge(selectedTrack.getMinimumAge(), selectedTrack.getMaximumAge()));
+        initModelTrack(masterService.getTrackDTOsByAge(selectedTrack.getMinimumAge(), selectedTrack.getMaximumAge()));
         tableViewAgeGroups.getSelectionModel().clearSelection();
     }
 
@@ -157,7 +173,7 @@ public class MainController {
         if (selectedTrack == null) {
             return;
         }
-        initModelChild(masterService.getChildrenByTrackId(selectedTrack.getId()));
+        initModelChild(masterService.getChildrenByTrackId(selectedTrack.getTrack().getId()));
         tableViewTracks.getSelectionModel().clearSelection();
     }
 }
