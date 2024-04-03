@@ -1,9 +1,6 @@
 package mpp.com.Service;
 
-import mpp.com.Domain.Child;
-import mpp.com.Domain.ChildTrackDTO;
-import mpp.com.Domain.Track;
-import mpp.com.Domain.User;
+import mpp.com.Domain.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -74,6 +71,14 @@ public class Service {
 
     public Iterable<Child> getChildrenByTrackId(Long idTrack) {
         return serviceChild.getChildrenByTrackId(idTrack);
+    }
+
+    public Iterable<TrackDTO> getTrackDTOs() {
+        return serviceTrack.getTrackDTOs();
+    }
+
+    public Iterable<TrackDTO> getTrackDTOsByAge(int minimumAge, int maximumAge) {
+        return serviceTrack.getTrackDTOsByAge(minimumAge, maximumAge);
     }
 
 }

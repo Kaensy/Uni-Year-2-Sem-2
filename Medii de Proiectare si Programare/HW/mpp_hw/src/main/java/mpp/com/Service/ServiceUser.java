@@ -2,15 +2,16 @@ package mpp.com.Service;
 
 import mpp.com.Domain.User;
 import mpp.com.Repository.RepoDBUser;
+import mpp.com.Repository.RepositoryUser;
 
 import java.util.Optional;
 
 public class ServiceUser {
 
 
-    RepoDBUser repoDBUser;
+    RepositoryUser repoDBUser;
 
-    public ServiceUser(RepoDBUser repoDBUser) {
+    public ServiceUser(RepositoryUser repoDBUser) {
         this.repoDBUser = repoDBUser;
     }
 

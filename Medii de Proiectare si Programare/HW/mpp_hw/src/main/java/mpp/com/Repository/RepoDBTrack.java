@@ -1,6 +1,7 @@
 package mpp.com.Repository;
 
 import mpp.com.Domain.Track;
+import mpp.com.Domain.TrackDTO;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -159,6 +160,64 @@ public class RepoDBTrack implements RepositoryTrack{
             statement.setInt(4, entity.getDistance());
             statement.executeUpdate();
             return Optional.empty();
+        }
+        catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public Iterable<TrackDTO> getTrackDTOs() {
+        logger.info("Getting TrackDTOs");
+        List<TrackDTO> trackDTOs = new ArrayList<>();
+
+        try {
+            var connection = dbUtils.getConnection();
+            PreparedStatement statement = connection.prepareStatement("SELECT track.id, track.name, track.minimum_age, track.maximum_age, track.distance, COUNT(children.id) as nrParticipants FROM track LEFT JOIN childrentracks ON track.id = childrentracks.id_track LEFT JOIN children ON childrentracks.id_child = children.id GROUP BY track.id");
+            ResultSet resultSet = statement.executeQuery();
+
+            while(resultSet.next()) {
+                Long id = resultSet.getLong("id");
+                String name = resultSet.getString("name");
+                int minimumAge = resultSet.getInt("minimum_age");
+                int maximumAge = resultSet.getInt("maximum_age");
+                int distance = resultSet.getInt("distance");
+                int nrParticipants = resultSet.getInt("nrParticipants");
+                Track track = new Track(name, minimumAge, maximumAge, distance);
+                track.setId(id);
+                TrackDTO trackDTO = new TrackDTO(track, nrParticipants);
+                trackDTOs.add(trackDTO);
+            }
+            return trackDTOs;
+        }
+        catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public Iterable<TrackDTO> getTrackDTOsByAge(int minimumAge, int maximumAge) {
+        logger.info("Getting TrackDTOs by Age");
+        List<TrackDTO> trackDTOs = new ArrayList<>();
+
+        try {
+            var connection = dbUtils.getConnection();
+            PreparedStatement statement = connection.prepareStatement("SELECT track.id, track.name, track.minimum_age, track.maximum_age, track.distance, COUNT(children.id) as nrParticipants FROM track LEFT JOIN childrentracks ON track.id = childrentracks.id_track LEFT JOIN children ON childrentracks.id_child = children.id WHERE track.minimum_age <= ? AND track.maximum_age >= ? GROUP BY track.id");
+            statement.setInt(1, minimumAge);
+            statement.setInt(2, maximumAge);
+            ResultSet resultSet = statement.executeQuery();
+
+            while(resultSet.next()) {
+                Long id = resultSet.getLong("id");
+                String name = resultSet.getString("name");
+                int minimumAgeTrack = resultSet.getInt("minimum_age");
+                int maximumAgeTrack = resultSet.getInt("maximum_age");
+                int distance = resultSet.getInt("distance");
+                int nrParticipants = resultSet.getInt("nrParticipants");
+                Track track = new Track(name, minimumAgeTrack, maximumAgeTrack, distance);
+                track.setId(id);
+                TrackDTO trackDTO = new TrackDTO(track, nrParticipants);
+                trackDTOs.add(trackDTO);
+            }
+            return trackDTOs;
         }
         catch (SQLException e) {
             throw new RuntimeException(e);

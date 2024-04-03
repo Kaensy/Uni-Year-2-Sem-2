@@ -1,15 +1,17 @@
 package mpp.com.Service;
 
 import mpp.com.Domain.Track;
+import mpp.com.Domain.TrackDTO;
 import mpp.com.Repository.RepoDBTrack;
+import mpp.com.Repository.RepositoryTrack;
 
 import java.util.Optional;
 
 public class ServiceTrack {
 
-    RepoDBTrack repoDBTrack;
+    RepositoryTrack repoDBTrack;
 
-    public ServiceTrack(RepoDBTrack repoDBTrack) {
+    public ServiceTrack(RepositoryTrack repoDBTrack) {
         this.repoDBTrack = repoDBTrack;
     }
 
@@ -32,5 +34,12 @@ public class ServiceTrack {
 
     public Iterable<Track> getTracksByAge(int minimumAge, int maximumAge){
         return repoDBTrack.getTracksByAge(minimumAge, maximumAge);
+    }
+
+    public Iterable<TrackDTO> getTrackDTOs() {
+        return repoDBTrack.getTrackDTOs();
+    }
+    public Iterable<TrackDTO> getTrackDTOsByAge(int minimumAge, int maximumAge) {
+        return repoDBTrack.getTrackDTOsByAge(minimumAge, maximumAge);
     }
 }

@@ -5,9 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import mpp.com.Repository.RepoDBChild;
-import mpp.com.Repository.RepoDBTrack;
-import mpp.com.Repository.RepoDBUser;
+import mpp.com.Repository.*;
 import mpp.com.Service.Service;
 import mpp.com.Service.ServiceChild;
 import mpp.com.Service.ServiceTrack;
@@ -47,9 +45,9 @@ public class HelloApplication extends Application{
         }
 
 
-        var RepoDBTrack = new RepoDBTrack(props);
-        var RepoDBUser = new RepoDBUser(props);
-        var RepoDBChild = new RepoDBChild(props);
+        RepositoryTrack RepoDBTrack = new RepoDBTrack(props);
+        RepositoryUser RepoDBUser = new RepoDBUser(props);
+        RepositoryChild RepoDBChild = new RepoDBChild(props);
         service = new Service(new ServiceUser(RepoDBUser), new ServiceTrack(RepoDBTrack), new ServiceChild(RepoDBChild));
 
         launch();
