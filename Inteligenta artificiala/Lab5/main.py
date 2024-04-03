@@ -3,8 +3,10 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+from MyRegression import MyLinearUnivariateRegression, My3DRegression
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error
+
 
 
 def load_data(fileName, inputVariabName1, inputVariabName2, outputVariabName):
@@ -95,6 +97,10 @@ if __name__ == '__main__':
 
     # sklearn function
     regressor = linear_model.LinearRegression()
+
+    # mine
+    # regressor= My3DRegression()
+
     regressor.fit(xx, trainOutputs)
 
     w0, w1 = regressor.intercept_, regressor.coef_
