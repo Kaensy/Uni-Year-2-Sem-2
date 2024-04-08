@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using log4net.Config;
 using MPP_CSharp.Repository;
+using MPP_CSharp.Service;
 
 namespace MPP_CSharp
 {
@@ -27,7 +28,13 @@ namespace MPP_CSharp
                DBUtil.Instance.CloseConnection();
             };
             
-            Application.Run(new Form1());
+            IRepositoryUser repoUser = new RepoUser();
+            IRepositoryTrack repoTrack = new RepoTrack();
+            IRepositoryChild repoChild = new RepoChild();
+            Service.Service service = new Service.Service(new ServiceUser(repoUser), new ServiceTrack(repoTrack),
+                new ServiceChild(repoChild));
+            
+            Application.Run(new Form1(service));
         }
     }
 }

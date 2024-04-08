@@ -42,4 +42,7 @@ D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\o
 D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\obj\Debug\MPP_CSharp.csproj.CoreCompileInputs.cache
 D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\obj\Debug\MPP_CSharp.exe
 D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\obj\Debug\MPP_CSharp.pdb
-D:\GitHub\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\obj\Debug\MPP_CSharp.csproj.Up2Date
+D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\obj\Debug\MPP_CSharp.csproj.SuggestedBindingRedirects.cache
+D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\obj\Debug\MPP_CSharp.Form1.resources
+D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\obj\Debug\MPP_CSharp.MainWindow.resources
+D:\Github\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\obj\Debug\MPP_CSharp.csproj.CopyComplete

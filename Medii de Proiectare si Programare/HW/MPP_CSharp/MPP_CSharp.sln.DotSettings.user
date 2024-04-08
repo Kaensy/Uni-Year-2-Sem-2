@@ -10,4 +10,7 @@
     &lt;TestId&gt;MSTest::D663DFD7-9540-4DF5-BDE7-B66AC6D313C3::.NETFramework,Version=v4.8::MPP_CSharp.Tests.Repository.RepoTrackTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;MSTest::D663DFD7-9540-4DF5-BDE7-B66AC6D313C3::.NETFramework,Version=v4.8::MPP_CSharp.Tests.Repository.RepoUserTest.Test&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+&lt;/SessionState&gt;</s:String>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=MPP_005FCSharp_002FForm1/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=MPP_005FCSharp_002FMainWindow/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean></wpf:ResourceDictionary>

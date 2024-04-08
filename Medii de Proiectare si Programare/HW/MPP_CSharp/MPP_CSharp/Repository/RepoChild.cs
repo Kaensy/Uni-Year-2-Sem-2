@@ -54,22 +54,46 @@ public class RepoChild : IRepositoryChild
             var connection = DBUtil.Instance.GetConnection();
             using var command = new NpgsqlCommand("SELECT * FROM children", connection);
 
-            using var reader = command.ExecuteReader();
-            while (reader.Read())
+            List<Child> childList = new List<Child>();
+            using (var reader = command.ExecuteReader())
             {
-                var id = reader.GetInt32(reader.GetOrdinal("id"));
-                var name = reader.GetString(reader.GetOrdinal("name"));
-                var age = reader.GetInt32(reader.GetOrdinal("age"));
-                var child = new Child(id, name, age);
+                while (reader.Read())
+                {
+                    var id = reader.GetInt32(reader.GetOrdinal("id"));
+                    var name = reader.GetString(reader.GetOrdinal("name"));
+                    var age = reader.GetInt32(reader.GetOrdinal("age"));
+                    var child = new Child(id, name, age);
+                    childList.Add(child);
+                }
+            }
 
+            foreach (var child in childList)
+            {
+                using var commandTracks = new NpgsqlCommand("SELECT * FROM track t JOIN childrentracks ct ON t.id = ct.id_track WHERE ct.id_child = @idChild", connection);
+                commandTracks.Parameters.AddWithValue("@idChild", child.Id);
+                using var readerTracks = commandTracks.ExecuteReader();
+                var tracks = new List<Track>();
+
+                while (readerTracks.Read())
+                {
+                    var nameTrack = readerTracks.GetString(readerTracks.GetOrdinal("name"));
+                    var minimumAge = readerTracks.GetInt32(readerTracks.GetOrdinal("minimum_age"));
+                    var maximumAge = readerTracks.GetInt32(readerTracks.GetOrdinal("maximum_age"));
+                    var distance = readerTracks.GetInt32(readerTracks.GetOrdinal("distance"));
+                    var track = new Track(nameTrack, minimumAge, maximumAge, distance);
+                    tracks.Add(track);
+                }
+
+                child.Tracks = tracks;
                 children.Add(child);
             }
         }
         catch (NpgsqlException e)
         {
             Logger.Error(e);
+            throw;
         }
-        Logger.Debug($"Children found: {children.Count}");
+
         return children;
     }
 
@@ -82,8 +106,8 @@ public class RepoChild : IRepositoryChild
             Logger.Error("Child is null");
             return null;
         }
-        
-        var insertSql = "INSERT INTO children(name, age) VALUES (@name, @age)";
+
+        var insertSql = "INSERT INTO children(name, age) VALUES (@name, @age) RETURNING id";
 
         try
         {
@@ -91,7 +115,21 @@ public class RepoChild : IRepositoryChild
             using var command = new NpgsqlCommand(insertSql, connection);
             command.Parameters.AddWithValue("@name", entity.Name);
             command.Parameters.AddWithValue("@age", entity.Age);
-            command.ExecuteNonQuery();
+
+            
+            var childId = (int)command.ExecuteScalar();
+
+            if (entity.Tracks != null) 
+            {
+                foreach (var track in entity.Tracks)
+                {
+                    using var commandTrack = new NpgsqlCommand("INSERT INTO childrentracks(id_child, id_track) VALUES (@idChild, @idTrack)", connection);
+                    commandTrack.Parameters.AddWithValue("@idChild", childId);
+                    commandTrack.Parameters.AddWithValue("@idTrack", track.Id);
+                    commandTrack.ExecuteNonQuery();
+                }
+            }
+
         }
         catch (NpgsqlException e)
         {
@@ -115,4 +153,88 @@ public class RepoChild : IRepositoryChild
     {
         throw new System.NotImplementedException();
     }
+    
+    public IEnumerable<ChildTrackDTO> GetChildrenByTracks(long idTrack)
+    {
+        Logger.Info($"Finding Children that participate in Track with id: {idTrack}");
+        var children = new List<ChildTrackDTO>();
+
+        try
+        {
+            var connection = DBUtil.Instance.GetConnection();
+            using var command = new NpgsqlCommand("SELECT c.id, c.name, c.age FROM children c JOIN childrentracks ct ON c.id = ct.id_child WHERE ct.id_track = @idTrack", connection);
+            command.Parameters.AddWithValue("@idTrack", idTrack);
+
+            using var reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                var id = reader.GetInt32(reader.GetOrdinal("id"));
+                var name = reader.GetString(reader.GetOrdinal("name"));
+                var age = reader.GetInt32(reader.GetOrdinal("age"));
+                var child = new Child(name, age) { Id = id };
+                var childTrack = new ChildTrackDTO(child, (int)idTrack);
+
+                children.Add(childTrack);
+            }
+        }
+        catch (NpgsqlException e)
+        {
+            Logger.Error(e);
+            throw;
+        }
+
+        return children;
+    }
+    
+    public IEnumerable<Child> GetChildrenByTrackId(long idTrack) {
+    Logger.Info($"Finding Children that participate in Track with id: {idTrack}");
+    var children = new SortedSet<Child>(Comparer<Child>.Create((x, y) => x.Id.CompareTo(y.Id)));
+
+    try
+    {
+        var connection = DBUtil.Instance.GetConnection();
+        using var command = new NpgsqlCommand("SELECT c.id, c.name, c.age FROM children c JOIN childrentracks ct ON c.id = ct.id_child WHERE ct.id_track = @idTrack", connection);
+        command.Parameters.AddWithValue("@idTrack", idTrack);
+
+        List<Child> childList = new List<Child>();
+        using (var reader = command.ExecuteReader())
+        {
+            while (reader.Read())
+            {
+                var id = reader.GetInt32(reader.GetOrdinal("id"));
+                var name = reader.GetString(reader.GetOrdinal("name"));
+                var age = reader.GetInt32(reader.GetOrdinal("age"));
+                var child = new Child(name, age) { Id = id };
+                childList.Add(child);
+            }
+        }
+
+        foreach (var child in childList)
+        {
+            using var commandTracks = new NpgsqlCommand("SELECT * FROM track t JOIN childrentracks ct ON t.id = ct.id_track WHERE ct.id_child = @idChild", connection);
+            commandTracks.Parameters.AddWithValue("@idChild", child.Id);
+            using var readerTracks = commandTracks.ExecuteReader();
+            var tracks = new List<Track>();
+
+            while (readerTracks.Read())
+            {
+                var nameTrack = readerTracks.GetString(readerTracks.GetOrdinal("name"));
+                var minimumAge = readerTracks.GetInt32(readerTracks.GetOrdinal("minimum_age"));
+                var maximumAge = readerTracks.GetInt32(readerTracks.GetOrdinal("maximum_age"));
+                var distance = readerTracks.GetInt32(readerTracks.GetOrdinal("distance"));
+                var track = new Track(nameTrack, minimumAge, maximumAge, distance) { Id = idTrack };
+                tracks.Add(track);
+            }
+            child.Tracks = tracks;
+            children.Add(child);
+        }
+    }
+    catch (NpgsqlException e)
+    {
+        Logger.Error(e);
+        throw;
+    }
+
+    return children;
+}
 }

@@ -11,6 +11,10 @@ namespace MPP_CSharp.Domain
         public int Distance { get; set; }
         public List<Child> Children { get; set; }
         
+        public String GetAgeInterval() {
+            return MinimumAge + "-" + MaximumAge;
+        }
+        
         public Track(long id, string name, int minimumAge, int maximumAge, int distance) : base(id)
         {
             Name = name;
