@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Reflection;
 using log4net;
 using MPP_CSharp.Domain;
@@ -112,4 +113,145 @@ public class RepoTrack : IRepositoryTrack
     {
         throw new System.NotImplementedException();
     }
+    
+    public Track? FindTrackByName(string trackName)
+    {
+        Logger.Info($"Finding Track with name: {trackName}");
+
+        if (trackName == null)
+        {
+            throw new ArgumentException("TrackName must not be null");
+        }
+
+        try
+        {
+            var connection = DBUtil.Instance.GetConnection();
+            using var command = new NpgsqlCommand("SELECT * FROM track WHERE name = @name", connection);
+            command.Parameters.AddWithValue("@name", trackName);
+
+            using var reader = command.ExecuteReader();
+            if (reader.Read())
+            {
+                var id = reader.GetInt32(reader.GetOrdinal("id"));
+                var name = reader.GetString(reader.GetOrdinal("name"));
+                var minimumAge = reader.GetInt32(reader.GetOrdinal("minimum_age"));
+                var maximumAge = reader.GetInt32(reader.GetOrdinal("maximum_age"));
+                var distance = reader.GetInt32(reader.GetOrdinal("distance"));
+                var track = new Track(name, minimumAge, maximumAge, distance) { Id = id };
+                return track;
+            }
+        }
+        catch (NpgsqlException e)
+        {
+            Logger.Error(e);
+            throw;
+        }
+
+        return null;
+    }
+    
+    public IEnumerable<TrackDTO> GetTrackDTOs()
+    {
+        Logger.Info("Getting TrackDTOs");
+        var trackDTOs = new List<TrackDTO>();
+
+        try
+        {
+            var connection = DBUtil.Instance.GetConnection();
+            using var command = new NpgsqlCommand("SELECT track.id, track.name, track.minimum_age, track.maximum_age, track.distance, COUNT(children.id) as nrParticipants FROM track LEFT JOIN childrentracks ON track.id = childrentracks.id_track LEFT JOIN children ON childrentracks.id_child = children.id GROUP BY track.id", connection);
+
+            using var reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                var id = reader.GetInt32(reader.GetOrdinal("id"));
+                var name = reader.GetString(reader.GetOrdinal("name"));
+                var minimumAge = reader.GetInt32(reader.GetOrdinal("minimum_age"));
+                var maximumAge = reader.GetInt32(reader.GetOrdinal("maximum_age"));
+                var distance = reader.GetInt32(reader.GetOrdinal("distance"));
+                var nrParticipants = reader.GetInt32(reader.GetOrdinal("nrParticipants"));
+                var track = new Track(name, minimumAge, maximumAge, distance) { Id = id };
+                var trackDTO = new TrackDTO(track, nrParticipants);
+
+                trackDTOs.Add(trackDTO);
+            }
+        }
+        catch (NpgsqlException e)
+        {
+            Logger.Error(e);
+            throw;
+        }
+
+        return trackDTOs;
+    }
+    
+    public IEnumerable<TrackDTO> GetTrackDTOsByAge(int minimumAge, int maximumAge)
+    {
+        Logger.Info("Getting TrackDTOs by Age");
+        var trackDTOs = new List<TrackDTO>();
+
+        try
+        {
+            var connection = DBUtil.Instance.GetConnection();
+            using var command = new NpgsqlCommand("SELECT track.id, track.name, track.minimum_age, track.maximum_age, track.distance, COUNT(children.id) as nrParticipants FROM track LEFT JOIN childrentracks ON track.id = childrentracks.id_track LEFT JOIN children ON childrentracks.id_child = children.id WHERE track.minimum_age <= @minimumAge AND track.maximum_age >= @maximumAge GROUP BY track.id", connection);
+            command.Parameters.AddWithValue("@minimumAge", minimumAge);
+            command.Parameters.AddWithValue("@maximumAge", maximumAge);
+
+            using var reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                var id = reader.GetInt32(reader.GetOrdinal("id"));
+                var name = reader.GetString(reader.GetOrdinal("name"));
+                var minimumAgeTrack = reader.GetInt32(reader.GetOrdinal("minimum_age"));
+                var maximumAgeTrack = reader.GetInt32(reader.GetOrdinal("maximum_age"));
+                var distance = reader.GetInt32(reader.GetOrdinal("distance"));
+                var nrParticipants = reader.GetInt32(reader.GetOrdinal("nrParticipants"));
+                var track = new Track(name, minimumAgeTrack, maximumAgeTrack, distance) { Id = id };
+                var trackDTO = new TrackDTO(track, nrParticipants);
+
+                trackDTOs.Add(trackDTO);
+            }
+        }
+        catch (NpgsqlException e)
+        {
+            Logger.Error(e);
+            throw;
+        }
+
+        return trackDTOs;
+    }
+    
+    public IEnumerable<Track> GetTracksByAge(int minimumAge, int maximumAge)
+    {
+        Logger.Info("Finding All Tracks by Age");
+        var tracks = new SortedSet<Track>(Comparer<Track>.Create((x, y) => x.Id.CompareTo(y.Id)));
+
+        try
+        {
+            var connection = DBUtil.Instance.GetConnection();
+            using var command = new NpgsqlCommand("SELECT * FROM track WHERE minimum_age <= @minimumAge AND maximum_age >= @maximumAge", connection);
+            command.Parameters.AddWithValue("@minimumAge", minimumAge);
+            command.Parameters.AddWithValue("@maximumAge", maximumAge);
+
+            using var reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                var id = reader.GetInt32(reader.GetOrdinal("id"));
+                var name = reader.GetString(reader.GetOrdinal("name"));
+                var minimumAgeTrack = reader.GetInt32(reader.GetOrdinal("minimum_age"));
+                var maximumAgeTrack = reader.GetInt32(reader.GetOrdinal("maximum_age"));
+                var distance = reader.GetInt32(reader.GetOrdinal("distance"));
+                var track = new Track(name, minimumAgeTrack, maximumAgeTrack, distance) { Id = id };
+
+                tracks.Add(track);
+            }
+        }
+        catch (NpgsqlException e)
+        {
+            Logger.Error(e);
+            throw;
+        }
+
+        return tracks;
+    }
+    
 }

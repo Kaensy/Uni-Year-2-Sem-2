@@ -5,6 +5,7 @@ namespace MPP_CSharp.Repository
 {
     public interface IRepositoryChild : IRepository<long, Child>
     {
-        public IEnumerable<Child> FindChildrenByTrack(long trackId);
+        public IEnumerable<ChildTrackDTO> GetChildrenByTracks(long trackId);
+        public IEnumerable<Child> GetChildrenByTrackId(long idTrack);
     }
 }
