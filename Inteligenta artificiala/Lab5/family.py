@@ -67,7 +67,7 @@ trainOutputs = [outputs[i] for i in trainSample]
 validationInputs = [inputs[i] for i in validationSample]
 validationOutputs = [outputs[i] for i in validationSample]
 
-plot_data(trainInputs, trainOutputs, [], [], validationInputs, validationOutputs, "train and test data")
+plot_data(trainInputs, trainOutputs, [], [], validationInputs, validationOutputs, "Train and Test Data")
 
 # training step
 # sklearn function
@@ -91,14 +91,14 @@ for i in range(1, noOfPoints):
     xref.append(val)
     val += step
 yref = [w0 + w1 * el for el in xref]
-plot_data(trainInputs, trainOutputs, xref, yref, [], [], title="train data and model")
+plot_data(trainInputs, trainOutputs, xref, yref, [], [], title="Train Data and Model")
 
 # makes predictions for test data
 # computedTestOutputs = [w0 + w1 * el for el in testInputs]
 # makes predictions for test data (by tool)
 computedValidationOutputs = regressor.predict([[x] for x in validationInputs])
 plot_data([], [], validationInputs, computedValidationOutputs, validationInputs, validationOutputs,
-         "predictions vs real test data")
+         "Predictions vs Real Test data")
 
 # compute the differences between the predictions and real outputs
 error = 0.0
