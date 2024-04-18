@@ -222,7 +222,7 @@ public class RepoTrack : IRepositoryTrack
     
     public IEnumerable<Track> GetTracksByAge(int minimumAge, int maximumAge)
     {
-        Logger.Info("Finding All Tracks by Age");
+        Logger.Info($"Finding All Tracks by Age inbetween: {minimumAge} - {maximumAge}");
         var tracks = new SortedSet<Track>(Comparer<Track>.Create((x, y) => x.Id.CompareTo(y.Id)));
 
         try

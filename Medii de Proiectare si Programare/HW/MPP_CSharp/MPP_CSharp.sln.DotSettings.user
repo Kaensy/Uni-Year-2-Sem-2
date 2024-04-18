@@ -1,6 +1,7 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
   &lt;Assembly Path="D:\GitHub\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\packages\log4net.2.0.17\lib\net45\log4net.dll" /&gt;&#xD;
+  &lt;Assembly Path="D:\GitHub\Year2Sem2\Medii de Proiectare si Programare\HW\MPP_CSharp\MPP_CSharp\bin\Debug\log4net.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=DED39643_002D3D8D_002D4B61_002DBB16_002D20E254CFF276/@EntryIndexedValue">D663DFD7-9540-4DF5-BDE7-B66AC6D313C3</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestTemplateMapping/=MSTest/@EntryIndexedValue">d6790ab7-33c2-4425-b2c9-51480cd1a852</s:String>

@@ -1376,3 +1376,218 @@ DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error
 2024-04-09 00:02:24,912 INFO  MPP_CSharp.Repository.RepoTrack 155 GetTrackDTOs - Getting TrackDTOs
 2024-04-09 00:02:24,912 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
 2024-04-09 00:02:24,912 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 02:56:31,147 DEBUG MPP_CSharp.Repository.RepoUser 18 .ctor - Creating RepoUser
+2024-04-09 02:56:31,220 DEBUG MPP_CSharp.Repository.RepoTrack 17 .ctor - Creating RepoTrack
+2024-04-09 02:56:31,221 DEBUG MPP_CSharp.Repository.RepoChild 17 .ctor - Creating RepoChild
+2024-04-09 02:56:37,284 INFO  MPP_CSharp.Repository.RepoUser 48 FindByUsernamePassword - Logging in user with username: lau
+2024-04-09 02:56:37,305 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 02:56:37,306 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-04-09 02:56:37,307 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-04-09 02:56:37,953 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-04-09 02:56:37,953 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 02:56:38,161 DEBUG MPP_CSharp.Repository.RepoUser 65 FindByUsernamePassword - User found: MPP_CSharp.Domain.User
+2024-04-09 02:56:38,263 INFO  MPP_CSharp.Repository.RepoChild 49 GetAll - Finding all children
+2024-04-09 02:56:38,267 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 02:56:38,267 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 02:56:38,331 INFO  MPP_CSharp.Repository.RepoTrack 54 GetAll - Finding all tracks
+2024-04-09 02:56:38,332 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 02:56:38,332 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 02:56:38,334 DEBUG MPP_CSharp.Repository.RepoTrack 78 GetAll - Tracks found: 6
+2024-04-09 02:56:38,345 INFO  MPP_CSharp.Repository.RepoTrack 155 GetTrackDTOs - Getting TrackDTOs
+2024-04-09 02:56:38,345 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 02:56:38,346 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 02:56:42,523 INFO  MPP_CSharp.Repository.RepoChild 190 GetChildrenByTrackId - Finding Children that participate in Track with id: 6
+2024-04-09 02:56:42,525 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 02:56:42,526 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 02:56:45,498 INFO  MPP_CSharp.Repository.RepoTrack 189 GetTrackDTOsByAge - Getting TrackDTOs by Age
+2024-04-09 02:56:45,502 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 02:56:45,502 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 02:56:47,304 INFO  MPP_CSharp.Repository.RepoTrack 189 GetTrackDTOsByAge - Getting TrackDTOs by Age
+2024-04-09 02:56:47,305 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 02:56:47,305 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 02:56:48,916 INFO  MPP_CSharp.Repository.RepoTrack 189 GetTrackDTOsByAge - Getting TrackDTOs by Age
+2024-04-09 02:56:48,916 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 02:56:48,917 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 02:56:50,703 INFO  MPP_CSharp.Repository.RepoTrack 189 GetTrackDTOsByAge - Getting TrackDTOs by Age
+2024-04-09 02:56:50,703 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 02:56:50,704 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 02:56:52,350 INFO  MPP_CSharp.Repository.RepoChild 190 GetChildrenByTrackId - Finding Children that participate in Track with id: 5
+2024-04-09 02:56:52,350 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 02:56:52,351 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 02:56:54,164 INFO  MPP_CSharp.Repository.RepoTrack 189 GetTrackDTOsByAge - Getting TrackDTOs by Age
+2024-04-09 02:56:54,164 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 02:56:54,165 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 02:56:56,639 INFO  MPP_CSharp.Repository.RepoTrack 189 GetTrackDTOsByAge - Getting TrackDTOs by Age
+2024-04-09 02:56:56,640 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 02:56:56,640 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 02:56:58,377 INFO  MPP_CSharp.Repository.RepoChild 190 GetChildrenByTrackId - Finding Children that participate in Track with id: 3
+2024-04-09 02:56:58,377 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 02:56:58,378 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 02:57:00,075 INFO  MPP_CSharp.Repository.RepoTrack 189 GetTrackDTOsByAge - Getting TrackDTOs by Age
+2024-04-09 02:57:00,076 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 02:57:00,076 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 02:57:01,371 INFO  MPP_CSharp.Repository.RepoTrack 189 GetTrackDTOsByAge - Getting TrackDTOs by Age
+2024-04-09 02:57:01,371 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 02:57:01,372 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 02:57:03,405 INFO  MPP_CSharp.Repository.RepoChild 190 GetChildrenByTrackId - Finding Children that participate in Track with id: 5
+2024-04-09 02:57:03,407 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 02:57:03,407 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 02:57:10,948 DEBUG MPP_CSharp.Repository.DBUtil 78 CloseConnection - Closing connection
+2024-04-09 08:21:37,200 DEBUG MPP_CSharp.Repository.RepoUser 18 .ctor - Creating RepoUser
+2024-04-09 08:21:37,216 DEBUG MPP_CSharp.Repository.RepoTrack 17 .ctor - Creating RepoTrack
+2024-04-09 08:21:37,217 DEBUG MPP_CSharp.Repository.RepoChild 17 .ctor - Creating RepoChild
+2024-04-09 08:21:42,738 INFO  MPP_CSharp.Repository.RepoUser 48 FindByUsernamePassword - Logging in user with username: lau
+2024-04-09 08:21:42,758 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:21:42,758 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-04-09 08:21:42,758 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-04-09 08:21:43,304 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-04-09 08:21:43,304 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:21:43,466 DEBUG MPP_CSharp.Repository.RepoUser 65 FindByUsernamePassword - User found: MPP_CSharp.Domain.User
+2024-04-09 08:21:43,544 INFO  MPP_CSharp.Repository.RepoChild 49 GetAll - Finding all children
+2024-04-09 08:21:43,548 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:21:43,549 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:21:43,596 INFO  MPP_CSharp.Repository.RepoTrack 54 GetAll - Finding all tracks
+2024-04-09 08:21:43,597 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:21:43,597 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:21:43,598 DEBUG MPP_CSharp.Repository.RepoTrack 78 GetAll - Tracks found: 6
+2024-04-09 08:21:43,606 INFO  MPP_CSharp.Repository.RepoTrack 155 GetTrackDTOs - Getting TrackDTOs
+2024-04-09 08:21:43,606 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:21:43,607 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:21:58,743 INFO  MPP_CSharp.Repository.RepoChild 190 GetChildrenByTrackId - Finding Children that participate in Track with id: 5
+2024-04-09 08:21:58,754 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:21:58,754 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:22:01,138 INFO  MPP_CSharp.Repository.RepoTrack 189 GetTrackDTOsByAge - Getting TrackDTOs by Age
+2024-04-09 08:22:01,153 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:22:01,153 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:22:04,518 INFO  MPP_CSharp.Repository.RepoChild 190 GetChildrenByTrackId - Finding Children that participate in Track with id: 5
+2024-04-09 08:22:04,520 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:22:04,520 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:22:17,827 INFO  MPP_CSharp.Repository.RepoChild 190 GetChildrenByTrackId - Finding Children that participate in Track with id: 6
+2024-04-09 08:22:17,829 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:22:17,829 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:22:24,812 INFO  MPP_CSharp.Repository.RepoTrack 189 GetTrackDTOsByAge - Getting TrackDTOs by Age
+2024-04-09 08:22:24,813 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:22:24,813 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:22:25,800 INFO  MPP_CSharp.Repository.RepoTrack 189 GetTrackDTOsByAge - Getting TrackDTOs by Age
+2024-04-09 08:22:25,800 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:22:25,801 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:22:27,553 INFO  MPP_CSharp.Repository.RepoTrack 189 GetTrackDTOsByAge - Getting TrackDTOs by Age
+2024-04-09 08:22:27,553 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:22:27,553 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:22:29,368 INFO  MPP_CSharp.Repository.RepoTrack 189 GetTrackDTOsByAge - Getting TrackDTOs by Age
+2024-04-09 08:22:29,370 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:22:29,370 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:22:34,522 INFO  MPP_CSharp.Repository.RepoChild 190 GetChildrenByTrackId - Finding Children that participate in Track with id: 5
+2024-04-09 08:22:34,523 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:22:34,523 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:22:47,246 INFO  MPP_CSharp.Repository.RepoUser 48 FindByUsernamePassword - Logging in user with username: lau
+2024-04-09 08:22:47,247 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:22:47,247 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:22:47,248 DEBUG MPP_CSharp.Repository.RepoUser 65 FindByUsernamePassword - User found: MPP_CSharp.Domain.User
+2024-04-09 08:22:47,285 INFO  MPP_CSharp.Repository.RepoChild 49 GetAll - Finding all children
+2024-04-09 08:22:47,287 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:22:47,288 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:22:47,299 INFO  MPP_CSharp.Repository.RepoTrack 54 GetAll - Finding all tracks
+2024-04-09 08:22:47,300 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:22:47,300 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:22:47,301 DEBUG MPP_CSharp.Repository.RepoTrack 78 GetAll - Tracks found: 6
+2024-04-09 08:22:47,304 INFO  MPP_CSharp.Repository.RepoTrack 155 GetTrackDTOs - Getting TrackDTOs
+2024-04-09 08:22:47,304 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:22:47,304 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:23:04,805 DEBUG MPP_CSharp.Repository.RepoUser 18 .ctor - Creating RepoUser
+2024-04-09 08:23:04,821 DEBUG MPP_CSharp.Repository.RepoTrack 17 .ctor - Creating RepoTrack
+2024-04-09 08:23:04,822 DEBUG MPP_CSharp.Repository.RepoChild 17 .ctor - Creating RepoChild
+2024-04-09 08:23:12,090 INFO  MPP_CSharp.Repository.RepoUser 48 FindByUsernamePassword - Logging in user with username: lau
+2024-04-09 08:23:12,095 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:23:12,095 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-04-09 08:23:12,096 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-04-09 08:23:12,359 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-04-09 08:23:12,360 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:23:12,481 DEBUG MPP_CSharp.Repository.RepoUser 65 FindByUsernamePassword - User found: MPP_CSharp.Domain.User
+2024-04-09 08:23:12,541 INFO  MPP_CSharp.Repository.RepoChild 49 GetAll - Finding all children
+2024-04-09 08:23:12,543 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:23:12,544 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:23:12,568 INFO  MPP_CSharp.Repository.RepoTrack 54 GetAll - Finding all tracks
+2024-04-09 08:23:12,569 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:23:12,569 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:23:12,570 DEBUG MPP_CSharp.Repository.RepoTrack 78 GetAll - Tracks found: 6
+2024-04-09 08:23:12,574 INFO  MPP_CSharp.Repository.RepoTrack 155 GetTrackDTOs - Getting TrackDTOs
+2024-04-09 08:23:12,575 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:23:12,575 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:23:15,562 DEBUG MPP_CSharp.Repository.DBUtil 78 CloseConnection - Closing connection
+2024-04-09 08:57:42,615 DEBUG MPP_CSharp.Repository.RepoUser 18 .ctor - Creating RepoUser
+2024-04-09 08:57:42,647 DEBUG MPP_CSharp.Repository.RepoTrack 17 .ctor - Creating RepoTrack
+2024-04-09 08:57:42,648 DEBUG MPP_CSharp.Repository.RepoChild 17 .ctor - Creating RepoChild
+2024-04-09 08:57:52,204 INFO  MPP_CSharp.Repository.RepoUser 48 FindByUsernamePassword - Logging in user with username: lau
+2024-04-09 08:57:52,211 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:57:52,211 DEBUG MPP_CSharp.Repository.DBUtil 40 GetNewConnection - Getting new connection
+2024-04-09 08:57:52,212 DEBUG MPP_CSharp.Repository.DBUtil 45 GetNewConnection - Creating new connection
+2024-04-09 08:57:53,482 DEBUG MPP_CSharp.Repository.DBUtil 54 GetNewConnection - Returning new connection
+2024-04-09 08:57:53,483 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:57:53,754 DEBUG MPP_CSharp.Repository.RepoUser 65 FindByUsernamePassword - User found: MPP_CSharp.Domain.User
+2024-04-09 08:57:53,825 INFO  MPP_CSharp.Repository.RepoChild 49 GetAll - Finding all children
+2024-04-09 08:57:53,826 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:57:53,827 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:57:53,854 INFO  MPP_CSharp.Repository.RepoTrack 54 GetAll - Finding all tracks
+2024-04-09 08:57:53,855 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:57:53,856 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:57:53,857 DEBUG MPP_CSharp.Repository.RepoTrack 78 GetAll - Tracks found: 6
+2024-04-09 08:57:53,865 INFO  MPP_CSharp.Repository.RepoTrack 155 GetTrackDTOs - Getting TrackDTOs
+2024-04-09 08:57:53,865 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:57:53,865 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:57:57,970 INFO  MPP_CSharp.Repository.RepoTrack 189 GetTrackDTOsByAge - Getting TrackDTOs by Age
+2024-04-09 08:57:57,973 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:57:57,973 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:57:59,290 INFO  MPP_CSharp.Repository.RepoChild 190 GetChildrenByTrackId - Finding Children that participate in Track with id: 6
+2024-04-09 08:57:59,291 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:57:59,291 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:58:00,152 INFO  MPP_CSharp.Repository.RepoChild 190 GetChildrenByTrackId - Finding Children that participate in Track with id: 5
+2024-04-09 08:58:00,153 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:58:00,153 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:58:08,345 INFO  MPP_CSharp.Repository.RepoUser 48 FindByUsernamePassword - Logging in user with username: lau
+2024-04-09 08:58:08,345 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:58:08,346 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:58:08,347 DEBUG MPP_CSharp.Repository.RepoUser 65 FindByUsernamePassword - User found: MPP_CSharp.Domain.User
+2024-04-09 08:58:08,390 INFO  MPP_CSharp.Repository.RepoChild 49 GetAll - Finding all children
+2024-04-09 08:58:08,391 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:58:08,392 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:58:08,407 INFO  MPP_CSharp.Repository.RepoTrack 54 GetAll - Finding all tracks
+2024-04-09 08:58:08,408 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:58:08,409 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:58:08,410 DEBUG MPP_CSharp.Repository.RepoTrack 78 GetAll - Tracks found: 6
+2024-04-09 08:58:08,413 INFO  MPP_CSharp.Repository.RepoTrack 155 GetTrackDTOs - Getting TrackDTOs
+2024-04-09 08:58:08,418 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:58:08,419 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:58:16,149 INFO  MPP_CSharp.Repository.RepoTrack 189 GetTrackDTOsByAge - Getting TrackDTOs by Age
+2024-04-09 08:58:16,150 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:58:16,150 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:58:21,188 INFO  MPP_CSharp.Repository.RepoTrack 119 FindTrackByName - Finding Track with name: 50m
+2024-04-09 08:58:21,188 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:58:21,191 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:58:21,192 INFO  MPP_CSharp.Repository.RepoTrack 119 FindTrackByName - Finding Track with name: 100m
+2024-04-09 08:58:21,192 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:58:21,192 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:58:21,195 INFO  MPP_CSharp.Repository.RepoChild 102 Save - Saving Child: MPP_CSharp.Domain.Child
+2024-04-09 08:58:21,196 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:58:21,196 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:58:21,222 DEBUG MPP_CSharp.Repository.RepoChild 138 Save - Child saved:MPP_CSharp.Domain.Child
+2024-04-09 08:58:21,222 INFO  MPP_CSharp.Repository.RepoChild 49 GetAll - Finding all children
+2024-04-09 08:58:21,222 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:58:21,224 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:58:21,231 INFO  MPP_CSharp.Repository.RepoTrack 54 GetAll - Finding all tracks
+2024-04-09 08:58:21,231 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:58:21,233 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:58:21,233 DEBUG MPP_CSharp.Repository.RepoTrack 78 GetAll - Tracks found: 6
+2024-04-09 08:58:21,235 INFO  MPP_CSharp.Repository.RepoTrack 155 GetTrackDTOs - Getting TrackDTOs
+2024-04-09 08:58:21,236 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:58:21,236 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:58:25,625 INFO  MPP_CSharp.Repository.RepoTrack 189 GetTrackDTOsByAge - Getting TrackDTOs by Age
+2024-04-09 08:58:25,626 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:58:25,626 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:58:26,996 INFO  MPP_CSharp.Repository.RepoChild 190 GetChildrenByTrackId - Finding Children that participate in Track with id: 1
+2024-04-09 08:58:26,997 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:58:26,997 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:58:27,950 INFO  MPP_CSharp.Repository.RepoChild 190 GetChildrenByTrackId - Finding Children that participate in Track with id: 2
+2024-04-09 08:58:27,950 DEBUG MPP_CSharp.Repository.DBUtil 60 GetConnection - Getting connection
+2024-04-09 08:58:27,951 DEBUG MPP_CSharp.Repository.DBUtil 72 GetConnection - Returning connection
+2024-04-09 08:58:32,743 DEBUG MPP_CSharp.Repository.DBUtil 78 CloseConnection - Closing connection
