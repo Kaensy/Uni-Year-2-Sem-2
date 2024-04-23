@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        td {
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    // Table size
+    var n = 3;
+
+    var table = document.createElement('table');
+    document.body.appendChild(table);
+
+    // Creating an array with the image paths
+    var images = Array.from({length: n * n - 1}, (_, i) => 'images/imageonline3/' + Math.floor(i / n) + (i % n) + '.jpg');
+
+    // Randomize the images
+    images.sort(() => Math.random() - 0.5);
+
+    // Insert the images into the table
+    for (var i = 0; i < n; i++) {
+        var row = document.createElement('tr');
+        table.appendChild(row);
+        for (var j = 0; j < n; j++) {
+            var cell = document.createElement('td');
+            row.appendChild(cell);
+            if (images.length) {
+                cell.style.backgroundImage = 'url(' + images.pop() + ')';
+                cell.style.backgroundSize = '100% 100%';  // Change this line
+                cell.style.backgroundPosition = 'center';
+            } else {
+                cell.style.backgroundImage = '';
+                cell.classList.add('empty');
+            }
+        }
+    }
+
+    // Event Li
+    document.addEventListener('keydown', function(event) {
+        var emptyCell = document.querySelector('.empty');
+        var i = emptyCell.cellIndex;
+        var j = emptyCell.parentNode.rowIndex;
+        var cellToSwap;
+        switch (event.key) {
+            case 'ArrowUp':
+                if (j > 0) cellToSwap = table.rows[j - 1].cells[i];
+                break;
+            case 'ArrowDown':
+                if (j < n - 1) cellToSwap = table.rows[j + 1].cells[i];
+                break;
+            case 'ArrowLeft':
+                if (i > 0) cellToSwap = table.rows[j].cells[i - 1];
+                break;
+            case 'ArrowRight':
+                if (i < n - 1) cellToSwap = table.rows[j].cells[i + 1];
+                break;
+        }
+        if (cellToSwap) {
+            var tempImage = emptyCell.style.backgroundImage;
+            var tempSize = emptyCell.style.backgroundSize;
+            var tempPosition = emptyCell.style.backgroundPosition;
+
+            emptyCell.style.backgroundImage = cellToSwap.style.backgroundImage;
+            emptyCell.style.backgroundSize = cellToSwap.style.backgroundSize;
+            emptyCell.style.backgroundPosition = cellToSwap.style.backgroundPosition;
+            emptyCell.classList.remove('empty');
+
+            cellToSwap.style.backgroundImage = tempImage;
+            cellToSwap.style.backgroundSize = tempSize;
+            cellToSwap.style.backgroundPosition = tempPosition;
+            cellToSwap.classList.add('empty');
+        }
+    });
+</script>
+</body>
+</html>

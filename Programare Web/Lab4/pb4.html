@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Sortabil</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<table id="sortable-table">
+    <thead>
+    <tr>
+        <th onclick="sortTable(0)">Name</th>
+        <th onclick="sortTable(1)">Price</th>
+        <th onclick="sortTable(2)">Quantity</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Apple</td>
+        <td>5</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>Orange</td>
+        <td>10</td>
+        <td>9</td>
+    </tr>
+    </tbody>
+</table>
+
+<script>
+    function sortTable(colIndex) {
+        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+        table = document.getElementById("sortable-table");
+        switching = true;
+        // Set the sorting direction to ascending:
+        dir = "asc";
+        // Make a loop that will continue until no switching has been done:
+        while (switching) {
+            // Start by saying no switching is done
+            switching = false;
+            rows = table.rows;
+            // Loop through all table rows except the headers
+            for (i = 1; i < (rows.length - 1); i++) {
+                // Start by saying there should be no switching:
+                shouldSwitch = false;
+                // Get the two elements to be compared, one from current row and one from the next
+                x = rows[i].getElementsByTagName("td")[colIndex];
+                y = rows[i + 1].getElementsByTagName("td")[colIndex];
+                // Check if the two rows should switch place
+                if (dir == "asc") {
+                    if (isNaN(parseInt(x.innerHTML))) {
+                        shouldSwitch = x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase();
+                    } else {
+                        shouldSwitch = parseInt(x.innerHTML) > parseInt(y.innerHTML);
+                    }
+                } else if (dir == "desc") {
+                    if (isNaN(parseInt(x.innerHTML))) {
+                        shouldSwitch = x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase();
+                    } else {
+                        shouldSwitch = parseInt(x.innerHTML) < parseInt(y.innerHTML);
+                    }
+                }
+                if (shouldSwitch) {
+                    // If a switch has been marked, make the switch and mark that a switch has been done
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                    // Each time a switch is done, increase this count by 1:
+                    switchcount++;
+                }
+            }
+            if (switchcount == 0 && dir == "asc") {
+                // If no switching has been done and the direction is asc set the direction to desc and run the while loop again
+                dir = "desc";
+                switching = true;
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

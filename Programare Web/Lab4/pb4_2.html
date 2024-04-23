@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Inventory</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Fruit Inventory</h2>
+
+<table id="fruitTable">
+    <tr>
+        <th onclick="headerClicked('Name', 1,'fruitTable')">Name</th>
+        <td>Apple</td>
+        <td>Orange</td>
+    </tr>
+    <tr>
+        <th onclick="headerClicked('Price', 2,'fruitTable')">Price</th>
+        <td>5</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <th onclick="headerClicked('Quantity', 3,'fruitTable')">Quantity</th>
+        <td>10</td>
+        <td>9</td>
+    </tr>
+</table>
+
+<script>
+    var lastClickedHeader = null;
+    var isAscendingOrder = true;
+
+    // Create an array with the fruit data from columns
+    function headerClicked(headerName, rowNumber, tableId) {
+        var fruitData = [];
+        var table = document.getElementById(tableId);
+        var rows = table.rows;
+        for (var i = 0; i < rows.length; i++) {
+            var cells = rows[i].cells;
+            for (var j = 1; j < cells.length; j++) {
+                if (fruitData[j-1] === undefined) {
+                    fruitData[j-1] = cells[j].textContent;
+                } else {
+                    fruitData[j-1] += ","+cells[j].textContent;
+                }
+            }
+        }
+        // Split the big string into multiple elements
+        for ( var i = 0; i< fruitData.length; i++) {
+            fruitData[i] = fruitData[i].split(",");
+        }
+
+        // Check if the clicked header is the same as the last clicked header
+        if (headerName === lastClickedHeader) {
+            // If it is, toggle isAscendingOrder
+            isAscendingOrder = !isAscendingOrder;
+        } else {
+            // If it's not, set isAscendingOrder to true and update lastClickedHeader
+            isAscendingOrder = true;
+            lastClickedHeader = headerName;
+        }
+
+        // Sort fruitData based on the rowNumber'th element and the value of isAscendingOrder
+        fruitData.sort(function(a, b) {
+            if (isNaN(a[rowNumber-1])) {
+                // If it's a string, use localeCompare
+                return isAscendingOrder ? a[rowNumber-1].localeCompare(b[rowNumber-1]) : b[rowNumber-1].localeCompare(a[rowNumber-1]);
+            } else {
+                // If it's a number
+                return isAscendingOrder ? parseInt(a[rowNumber-1]) - parseInt(b[rowNumber-1]) : parseInt(b[rowNumber-1]) - parseInt(a[rowNumber-1]);
+            }
+        });
+
+        // Place the sorted fruitData back into the table
+        for (var i = 0; i < rows.length; i++) {
+            var cells = rows[i].cells;
+            for (var j = 1; j < cells.length; j++) {
+                cells[j].textContent = fruitData[j-1][i];
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+rootProject.name = "mpp_hw"
+include("TransportClient")
+include("TransportModel")
+include("TransportNetworking")
+include("TransportPersistence")
+include("TransportServer")
+include("TransportServices")
+include("TransportModel")
+include("TransportClient")
+include("TransportNetworking")
+include("TransportPersistence")
+include("TransportServer")
+include("TransportServices")

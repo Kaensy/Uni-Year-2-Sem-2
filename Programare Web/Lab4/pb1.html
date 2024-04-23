@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select id="lista1">
+    <option value="opt1">Left 1</option>
+    <option value="opt2">Left 2</option>
+    <option value="opt3">Left 3</option>
+</select>
+
+<select id="lista2">
+    <option value="opt1">Right 1</option>
+    <option value="opt2">Right 2</option>
+    <option value="opt3">Right 3</option>
+</select>
+
+<script>
+    var lista1 = document.getElementById('lista1');
+    var lista2 = document.getElementById('lista2');
+
+    lista1.addEventListener('dblclick', function() {
+        var selectedOption = this.options[this.selectedIndex];
+        this.remove(this.selectedIndex);
+        lista2.add(new Option(selectedOption.text, selectedOption.value));
+    });
+
+    lista2.addEventListener('dblclick', function() {
+        var selectedOption = this.options[this.selectedIndex];
+        this.remove(this.selectedIndex);
+        lista1.add(new Option(selectedOption.text, selectedOption.value));
+    });
+</script>
+</body>
+</html>

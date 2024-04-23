@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .invalid {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<form id="formular">
+    <label for="nume">Nume:</label><br>
+    <input type="text" id="nume" name="nume" ><br>
+    <label for="data_nasterii">Data nasterii:</label><br>
+    <input type="date" id="data_nasterii" name="data_nasterii" ><br>
+    <label for="varsta">Varsta:</label><br>
+    <input type="number" id="varsta" name="varsta" ><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" ><br>
+    <input type="submit" value="Trimite">
+</form>
+<p id="mesaj"></p>
+
+<script>
+    var formular = document.getElementById('formular');
+    var mesaj = document.getElementById('mesaj');
+
+    formular.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        var nume = document.getElementById('nume');
+        var data_nasterii = document.getElementById('data_nasterii');
+        var varsta = document.getElementById('varsta');
+        var email = document.getElementById('email');
+
+        var campuriInvalide = [];
+
+        if (!nume.value) {
+            campuriInvalide.push('nume');
+            nume.classList.add('invalid');
+        } else {
+            nume.classList.remove('invalid');
+        }
+
+        if (!data_nasterii.value) {
+            campuriInvalide.push('data nasterii');
+            data_nasterii.classList.add('invalid');
+        } else {
+            data_nasterii.classList.remove('invalid');
+        }
+
+        if (!varsta.value || varsta.value <= 0) {
+            campuriInvalide.push('varsta');
+            varsta.classList.add('invalid');
+        } else {
+            varsta.classList.remove('invalid');
+        }
+
+        if (!email.value || !email.validity.valid) {
+            campuriInvalide.push('email');
+            email.classList.add('invalid');
+        } else {
+            email.classList.remove('invalid');
+        }
+
+        if (campuriInvalide.length === 0) {
+            mesaj.textContent = 'Datele sunt completate corect';
+            mesaj.style.color = 'green';
+        } else {
+            mesaj.textContent = 'Campurile ' + campuriInvalide.join(' si ') + ' nu sunt completate corect';
+            mesaj.style.color = 'red';
+        }
+    });
+</script>
+</body>
+</html>

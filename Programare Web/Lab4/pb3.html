@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .cell {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+        }
+        .hidden {
+            background-color: #ccc;
+        }
+        #congratsImage {
+            position: relative;
+            display: none;
+        }
+        #image {
+            display: block;
+        }
+        #message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<table id="tabel"></table>
+<div id="congratsImage">
+    <img id="image" src="" alt="Congratulations Image">
+    <p id="message"></p>
+</div>
+
+<script>
+    var matrixSize = 4; // size of the matrix
+
+    // Ensure matrixSize is always an even number
+    if (matrixSize % 2 !== 0) {
+        matrixSize++;
+    }
+
+    var numere = []; // matrix numbers
+
+    // Fill the array with pairs of random numbers between 1 and 100
+    for (var i = 0; i < matrixSize * matrixSize / 2; i++) {
+        var randomNumber = Math.floor(Math.random() * 100) + 1;
+        numere.push(randomNumber, randomNumber);
+    }
+    numere.sort(() => Math.random() - 0.5); // mix the numbers
+
+    var tabel = document.getElementById('tabel');
+    var congratsImage = document.getElementById('congratsImage');
+    var image = document.getElementById('image');
+    var message = document.getElementById('message');
+    var celula1, celula2;
+
+    // Create the table
+    var index = 0; // index for the numbers array
+    for (var i = 0; i < matrixSize; i++) {
+        var row = document.createElement('tr'); // create a new row
+        for (var j = 0; j < matrixSize; j++) {
+            var celula = document.createElement('td');
+            celula.textContent = ''; // make the numbers hidden at the start
+            celula.className = 'cell hidden';
+            celula.dataset.value = numere[index];
+            row.appendChild(celula);
+            index++;
+        }
+        tabel.appendChild(row);
+    }
+
+    tabel.addEventListener('click', function(event) {
+        if (event.target.className.includes('cell')) {
+            if (!celula1) {
+                celula1 = event.target;
+                celula1.textContent = celula1.dataset.value; // make the number show up when you click the cell
+                celula1.classList.remove('hidden');
+            } else if (!celula2) {
+                celula2 = event.target;
+                celula2.textContent = celula2.dataset.value; // make the number show up when you click the cell
+                celula2.classList.remove('hidden');
+
+                if (celula1.dataset.value !== celula2.dataset.value) {
+                    setTimeout(function() {
+                        celula1.textContent = '';
+                        celula1.classList.add('hidden');
+                        celula2.textContent = '';
+                        celula2.classList.add('hidden');
+                        celula1 = celula2 = null;
+                    }, 2000);
+                } else {
+                    celula1 = celula2 = null;
+                }
+            }
+
+            // Check if all cells have been uncovered
+            var hiddenCells = document.querySelectorAll('.hidden');
+            if (hiddenCells.length === 0) {
+                image.src = 'images/happycapybara.png';
+                message.textContent = 'Congratulations!';
+                congratsImage.style.display = 'block';
+            }
+        }
+    });
+</script>
+</body>
+</html>
