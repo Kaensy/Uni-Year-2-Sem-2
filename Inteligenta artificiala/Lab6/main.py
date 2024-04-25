@@ -13,7 +13,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 from sklearn.preprocessing import StandardScaler
 from math import sqrt
-
+import warnings; warnings.simplefilter('ignore')
 
 
 def plot3Ddata(x1Train, x2Train, yTrain, x1Model = None, x2Model = None, yModel = None, x1Test = None, x2Test = None, yTest = None, title = None):

@@ -48,7 +48,7 @@ def generate_sentence2(chain, state_size, count=15):
     return sentence
 
 
-state_size = 10  # Change this to the number of states you want
+state_size = 10
 
 with open('data/proverbe.txt', 'r', encoding='utf-8') as f:
     text = f.read().replace('\n', ' ')
