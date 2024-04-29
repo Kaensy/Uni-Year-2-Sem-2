@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Inventory</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Fruit Inventory</h2>
+
+<table id="fruitTable">
+    <tr>
+        <th data-index="1">Name</th>
+        <td>Apple</td>
+        <td>Orange</td>
+    </tr>
+    <tr>
+        <th data-index="2">Price</th>
+        <td>5</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <th data-index="3">Quantity</th>
+        <td>10</td>
+        <td>9</td>
+    </tr>
+</table>
+
+<script>
+    $(document).ready(function(){
+        var lastClickedHeader = null;
+        var isAscendingOrder = true;
+
+        // Function to handle header click
+        $("th").click(function(){
+            var headerName = $(this).text();
+            var rowNumber = $(this).data('index');
+
+            // Create an array with the fruit data from columns
+            var fruitData = [];
+            $('#fruitTable tbody tr').each(function(){
+                var cellData = $(this).find('td:eq('+(rowNumber-1)+')').text();
+                fruitData.push(cellData);
+            });
+
+            // Check if the clicked header is the same as the last clicked header
+            if (headerName === lastClickedHeader) {
+                // If it is, toggle isAscendingOrder
+                isAscendingOrder = !isAscendingOrder;
+            } else {
+                // If it's not, set isAscendingOrder to true and update lastClickedHeader
+                isAscendingOrder = true;
+                lastClickedHeader = headerName;
+            }
+
+            // Sort fruitData based on the value of isAscendingOrder
+            fruitData.sort(function(a, b) {
+                if (isNaN(a) || isNaN(b)) {
+                    // If it's a string, use localeCompare
+                    return isAscendingOrder ? a.localeCompare(b) : b.localeCompare(a);
+                } else {
+                    // If it's a number
+                    return isAscendingOrder ? parseInt(a) - parseInt(b) : parseInt(b) - parseInt(a);
+                }
+            });
+
+            // Place the sorted fruitData back into the table
+            $('#fruitTable tbody tr').each(function(index){
+                $(this).find('td:eq('+(rowNumber-1)+')').text(fruitData[index]);
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        td {
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<script>
+    $(function() {
+        // Table size
+        var n = 3;
+
+        // Creating an array with the image paths
+        var images = $.map(new Array(n * n - 1), function(_, i) {
+            return 'images/imageonline3/' + Math.floor(i / n) + (i % n) + '.jpg';
+        });
+
+        // Randomize the images
+        images.sort(() => Math.random() - 0.5);
+
+        // Insert the images into the table
+        var table = $('<table/>').appendTo('body');
+        $.each(new Array(n), function(i) {
+            var row = $('<tr/>').appendTo(table);
+            $.each(new Array(n), function(j) {
+                var cell = $('<td/>').appendTo(row);
+                if (images.length) {
+                    cell.css({
+                        'background-image': 'url(' + images.pop() + ')',
+                        'background-size': '100% 100%',
+                        'background-position': 'center'
+                    });
+                } else {
+                    cell.css('background-image', '');
+                    cell.addClass('empty');
+                }
+            });
+        });
+
+        // Event Listener
+        $(document).keydown(function(event) {
+            var emptyCell = $('.empty');
+            var i = emptyCell.index();
+            var j = emptyCell.parent().index();
+            var cellToSwap;
+            switch (event.key) {
+                case 'ArrowUp':
+                    if (j > 0) cellToSwap = table.find('tr').eq(j - 1).find('td').eq(i);
+                    break;
+                case 'ArrowDown':
+                    if (j < n - 1) cellToSwap = table.find('tr').eq(j + 1).find('td').eq(i);
+                    break;
+                case 'ArrowLeft':
+                    if (i > 0) cellToSwap = table.find('tr').eq(j).find('td').eq(i - 1);
+                    break;
+                case 'ArrowRight':
+                    if (i < n - 1) cellToSwap = table.find('tr').eq(j).find('td').eq(i + 1);
+                    break;
+            }
+            if (cellToSwap) {
+                var tempImage = emptyCell.css('background-image');
+                var tempSize = emptyCell.css('background-size');
+                var tempPosition = emptyCell.css('background-position');
+
+                emptyCell.css({
+                    'background-image': cellToSwap.css('background-image'),
+                    'background-size': cellToSwap.css('background-size'),
+                    'background-position': cellToSwap.css('background-position')
+                }).removeClass('empty');
+
+                cellToSwap.css({
+                    'background-image': tempImage,
+                    'background-size': tempSize,
+                    'background-position': tempPosition
+                }).addClass('empty');
+            }
+        });
+    });
+</script>
+</body>
+</html>

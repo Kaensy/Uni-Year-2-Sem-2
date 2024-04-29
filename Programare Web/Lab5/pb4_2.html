@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Sortabil</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<table id="sortable-table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Apple</td>
+        <td>5</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>Orange</td>
+        <td>10</td>
+        <td>9</td>
+    </tr>
+    </tbody>
+</table>
+
+<script>
+    var dir = "asc";
+    $("#sortable-table th").click(function() {
+        var colIndex = $(this).index();
+        var rows = $('#sortable-table tbody tr').get();
+        var factor = (dir == "asc") ? 1 : -1; // Define factor based on dir
+        rows.sort(function(a, b) {
+            var A = getVal(a);
+            var B = getVal(b);
+            if(A < B) {
+                return -1*factor;
+            }
+            if(A > B) {
+                return 1*factor;
+            }
+            return 0;
+        });
+
+        function getVal(elm){
+            var v = $(elm).children('td').eq(colIndex).text().toUpperCase();
+            if($.isNumeric(v)){
+                v = parseInt(v,10);
+            }
+            return v;
+        }
+
+        $.each(rows, function(index, row) {
+            $('#sortable-table').children('tbody').append(row);
+        });
+
+        // Reverse direction
+        dir = (dir == "asc") ? "desc" : "asc";
+    });
+</script>
+
+</body>
+</html>

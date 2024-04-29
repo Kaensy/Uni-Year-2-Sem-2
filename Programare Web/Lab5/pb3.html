@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .cell {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+        }
+        .hidden {
+            background-color: #ccc;
+        }
+        #congratsImage {
+            position: relative;
+            display: none;
+        }
+        #image {
+            display: block;
+        }
+        #message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<table id="tabel"></table>
+<div id="congratsImage">
+    <img id="image" src="" alt="Congratulations Image">
+    <p id="message"></p>
+</div>
+
+<script>
+    var matrixSize = 4; // size of the matrix
+
+    // Ensure matrixSize is always an even number
+    if (matrixSize % 2 !== 0) {
+        matrixSize++;
+    }
+
+    var numere = []; // matrix numbers
+
+    // Fill the array with pairs of random numbers between 1 and 100
+    for (var i = 0; i < matrixSize * matrixSize / 2; i++) {
+        var randomNumber = Math.floor(Math.random() * 100) + 1;
+        numere.push(randomNumber, randomNumber);
+    }
+    numere.sort(() => Math.random() - 0.5); // mix the numbers
+
+    var $tabel = $('#tabel');
+    var $congratsImage = $('#congratsImage');
+    var $image = $('#image');
+    var $message = $('#message');
+    var $celula1, $celula2;
+
+    // Create the table
+    var index = 0; // index for the numbers array
+    for (var i = 0; i < matrixSize; i++) {
+        var $row = $('<tr>'); // create a new row
+        for (var j = 0; j < matrixSize; j++) {
+            var $celula = $('<td>');
+            $celula.text(''); // make the numbers hidden at the start
+            $celula.addClass('cell hidden');
+            $celula.data('value', numere[index]);
+            $row.append($celula);
+            index++;
+        }
+        $tabel.append($row);
+    }
+
+    $tabel.on('click', '.cell', function() {
+        var $target = $(this);
+        if (!$celula1) {
+            $celula1 = $target;
+            $celula1.text($celula1.data('value')); // make the number show up when you click the cell
+            $celula1.removeClass('hidden');
+        } else if (!$celula2) {
+            $celula2 = $target;
+            $celula2.text($celula2.data('value')); // make the number show up when you click the cell
+            $celula2.removeClass('hidden');
+
+            if ($celula1.data('value') !== $celula2.data('value')) {
+                setTimeout(function() {
+                    $celula1.text('');
+                    $celula1.addClass('hidden');
+                    $celula2.text('');
+                    $celula2.addClass('hidden');
+                    $celula1 = $celula2 = null;
+                }, 2000);
+            } else {
+                $celula1 = $celula2 = null;
+            }
+        }
+
+        // Check if all cells have been uncovered
+        var hiddenCells = $('.hidden');
+        if (hiddenCells.length === 0) {
+            $image.attr('src', 'images/happycapybara.png');
+            $message.text('Congratulations!');
+            $congratsImage.css('display', 'block');
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .cell {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+        }
+        .hidden {
+            background-color: #ccc;
+        }
+        .matched {
+            pointer-events: none;
+        }
+        #container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #congratsImage {
+            margin-left: 20px;
+        }
+        #image {
+            display: block;
+        }
+        #message {
+            color: green;
+            font-weight: bold;
+        }
+        .cell img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            vertical-align: top;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="container">
+    <table id="tabel"></table>
+    <div id="congratsImage">
+        <img id="image" src="">
+        <p id="message"></p>
+    </div>
+</div>
+<script>
+    var matrixSize = 4; // size of the matrix
+
+    // Ensure matrixSize is always an even number
+    if (matrixSize % 2 !== 0) {
+        matrixSize++;
+    }
+
+    var numere = []; // matrix numbers
+
+    // Create an array of image numbers from 1 to 30 ( number of images in folder )
+    var imageNumbers = Array.from({length: 30}, (_, i) => i + 1);
+
+    // Shuffle the array
+    imageNumbers.sort(() => Math.random() - 0.5);
+
+    // Use the first half of the array for the image paths
+    for (var i = 0; i < matrixSize * matrixSize / 2; i++) {
+        var imagePath = 'leaguecats/' + imageNumbers[i] + '.png';
+        numere.push(imagePath, imagePath);
+    }
+    numere.sort(() => Math.random() - 0.5); // mix the images
+
+    var $tabel = $('#tabel');
+    var $congratsImage = $('#congratsImage');
+    var $image = $('#image');
+    var $message = $('#message');
+    var $celula1, $celula2;
+    var waiting = false; // flag to indicate whether the game is currently waiting for two unmatched images to be hidden
+
+    // Create the table
+    var index = 0; // index for the numbers array
+    for (var i = 0; i < matrixSize; i++) {
+        var $row = $('<tr>'); // create a new row
+        for (var j = 0; j < matrixSize; j++) {
+            var $celula = $('<td>');
+            $celula.addClass('cell hidden');
+            $celula.data('value', numere[index]);
+            var $img = $('<img>'); // create an img element
+            $img.addClass('cellImage'); // add a class to the img element
+            $img.attr('src', 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'); // set src to a transparent image
+            $img.data('src', numere[index]); // store the image path in a data attribute
+            $celula.append($img); // append the img element to the cell
+            $row.append($celula);
+            index++;
+        }
+        $tabel.append($row);
+    }
+
+    $tabel.on('click', '.cell', function() {
+        if (waiting) return; // ignore clicks if the game is currently waiting for two unmatched images to be hidden
+        var $target = $(this);
+        if ($target.is('img')) {
+            $target = $target.parent(); // use the parent element (the cell) if the clicked element is an img
+        }
+        if ($target.hasClass('matched')) return; // ignore clicks on matched images
+        var $img = $target.find('img'); // get the img element
+        var isHidden = !$img.attr('src');
+        $img.attr('src', $img.data('src')).toggleClass('hidden', !isHidden); // make the image show up when you click the cell
+
+        if (!$celula1) {
+            $celula1 = $target;
+        } else if (!$celula2) {
+            $celula2 = $target;
+
+            if ($celula1.find('img').attr('src') !== $celula2.find('img').attr('src')) { // compare the src attributes of the img elements
+                waiting = true; // set the flag to true
+                setTimeout(function() {
+                    $celula1.find('img').attr('src', 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7').addClass('hidden'); // hide the image
+                    $celula2.find('img').attr('src', 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7').addClass('hidden'); // hide the image
+                    $celula1 = $celula2 = null;
+                    waiting = false; // set the flag to false
+                }, 2000);
+            } else {
+                $celula1.removeClass('hidden').addClass('matched');
+                $celula2.removeClass('hidden').addClass('matched');
+                $celula1 = $celula2 = null;
+            }
+        }
+
+        // Check if all cells have been uncovered
+        var matchedCells = $('.matched');
+        if (matchedCells.length === matrixSize * matrixSize) {
+            $image.attr('src', 'images/happycapybara.png');
+            $message.text('Congratulations!');
+            $congratsImage.css('display', 'block');
+        }
+    });
+</script>
+</body>
+</html>

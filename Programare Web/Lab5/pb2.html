@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .invalid {
+            border: 1px solid red;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<form id="formular">
+    <label for="nume">Nume:</label><br>
+    <input type="text" id="nume" name="nume" ><br>
+    <label for="data_nasterii">Data nasterii:</label><br>
+    <input type="date" id="data_nasterii" name="data_nasterii" ><br>
+    <label for="varsta">Varsta:</label><br>
+    <input type="number" id="varsta" name="varsta" ><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" ><br>
+    <input type="submit" value="Trimite">
+</form>
+<p id="mesaj"></p>
+
+<script>
+    $('#formular').on('submit', function(event) {
+        event.preventDefault();
+
+        var campuriInvalide = [];
+
+        $('#nume, #data_nasterii, #varsta, #email').each(function() {
+            var $this = $(this);
+            var isInvalid = !$this.val() || ($this.is('#varsta') && $this.val() <= 0) || ($this.is('#email') && !$this[0].checkValidity());
+            $this.toggleClass('invalid', isInvalid);
+            if (isInvalid) {
+                campuriInvalide.push($this.attr('name'));
+            }
+        });
+
+        if (campuriInvalide.length === 0) {
+            $('#mesaj').text('Datele sunt completate corect').css('color', 'green');
+        } else {
+            $('#mesaj').text('Campurile ' + campuriInvalide.join(' si ') + ' nu sunt completate corect').css('color', 'red');
+        }
+    });
+</script>
+</body>
+</html>
