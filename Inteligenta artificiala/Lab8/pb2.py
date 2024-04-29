@@ -16,7 +16,7 @@ with open("data/english.txt") as f:
 # Build the model.
 text_model = markovify.NewlineText(text)
 
-# Print five randomly-generated sentences
+
 
 sentence = ""
 new_sentences = ""
