@@ -1,0 +1,6 @@
+rootProject.name = 'Lab12'
+include 'domain'
+include 'persistence'
+include 'service'
+include 'RestServices'
+
