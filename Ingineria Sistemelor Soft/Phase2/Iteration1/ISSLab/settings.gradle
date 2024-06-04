@@ -1,5 +1,0 @@
-rootProject.name = 'ISSLab'
-include 'Models'
-include 'FrontEnd'
-include 'BackEnd'
-
