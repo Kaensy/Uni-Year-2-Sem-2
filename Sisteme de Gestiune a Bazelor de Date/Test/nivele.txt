@@ -1,4 +1,0 @@
-read uncommitted toate
-read committed elimina dirty reads
-repeatable reads elimina unrepeatable reads
-si serializable elimina phantom reads
