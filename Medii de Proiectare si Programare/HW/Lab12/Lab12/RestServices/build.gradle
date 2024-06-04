@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'mpp'
-version = '0.0.1-SNAPSHOT'
+version = '1.0-SNAPSHOT'
 
 java {
 	sourceCompatibility = '17'
@@ -22,12 +22,6 @@ repositories {
 }
 
 dependencies {
-	implementation project(':domain')
-	implementation project(':persistence')
-	implementation project(':service')
-
-
-
 	implementation 'org.springframework.boot:spring-boot-starter'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
@@ -37,6 +31,6 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
-tasks.named('test') {
+test {
 	useJUnitPlatform()
 }

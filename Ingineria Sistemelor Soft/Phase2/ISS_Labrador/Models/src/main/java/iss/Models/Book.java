@@ -1,6 +1,5 @@
 package iss.Models;
 
-
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
@@ -13,8 +12,8 @@ import org.hibernate.validator.constraints.Length;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Table(name = "accounts", schema = "public")
-public class Account {
+@Table(name = "books", schema = "public")
+public class Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,13 +24,16 @@ public class Account {
     @JoinColumn(name = "library_id")
     private Library library;
 
-    @NotEmpty(message = "Try again! Username cannot be empty")
-    @Column(name="username",unique = true)
-    private String username;
+    @NotEmpty(message = "Try again! Book Name cannot be empty")
+    @Column(name="name",unique = true)
+    private String name;
 
-    @Length(max = 255, message = "Password is too long")
-    @NotEmpty(message = "Try again! Password cannot be empty")
-    @Column(name="password")
-    private String password;
+    @NotEmpty(message = "Try again! Quantity cannot be empty")
+    @Column(name="quantity",unique = true)
+    private Long quantity;
+
+    @NotEmpty(message = "Try again! Author cannot be empty")
+    @Column(name="author",unique = true)
+    private String author;
 
 }
